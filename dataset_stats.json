@@ -1,0 +1,2849 @@
+{
+  "source_zip": "traffic.zip",
+  "zip_size_bytes": 232976918,
+  "zip_entries": 4038,
+  "valid_images": 4038,
+  "all_file_records": 4038,
+  "splits": [
+    "testing",
+    "training",
+    "validation"
+  ],
+  "classes": [
+    "Empty",
+    "High",
+    "Low",
+    "Medium",
+    "Traffic Jam"
+  ],
+  "counts_by_split_class": {
+    "testing/Empty": 64,
+    "testing/High": 64,
+    "testing/Low": 64,
+    "testing/Medium": 64,
+    "testing/Traffic Jam": 64,
+    "training/Empty": 1186,
+    "training/High": 378,
+    "training/Low": 936,
+    "training/Medium": 688,
+    "training/Traffic Jam": 190,
+    "validation/Empty": 120,
+    "validation/High": 38,
+    "validation/Low": 94,
+    "validation/Medium": 70,
+    "validation/Traffic Jam": 18
+  },
+  "counts_by_split": {
+    "testing": 320,
+    "training": 3378,
+    "validation": 340
+  },
+  "counts_by_class": {
+    "Empty": 1370,
+    "High": 480,
+    "Low": 1094,
+    "Medium": 822,
+    "Traffic Jam": 272
+  },
+  "extensions": {
+    ".jpg": 4027,
+    ".jpeg": 11
+  },
+  "formats": {
+    "JPEG": 4033,
+    "WEBP": 4,
+    "PNG": 1
+  },
+  "modes": {
+    "RGB": 4037,
+    "RGBA": 1
+  },
+  "format_mismatches": [
+    "Final Dataset/testing/Traffic Jam/20210125_DLI-AKS-MN_Ghazipur_border-16_1611613688877_1611613697329.jpg",
+    "Final Dataset/testing/Traffic Jam/826749-jam.jpg",
+    "Final Dataset/testing/Traffic Jam/904237-untitled-design.jpg",
+    "Final Dataset/training/Traffic Jam/79122305.jpg",
+    "Final Dataset/validation/Traffic Jam/1604126519_untitled-design.jpg"
+  ],
+  "problematic": [],
+  "non_image_files": [],
+  "dimensions": {
+    "width": {
+      "min": 111,
+      "max": 4256,
+      "mean": 611.5262506191184,
+      "median": 640.0,
+      "p25": 640.0,
+      "p75": 640.0
+    },
+    "height": {
+      "min": 119,
+      "max": 2832,
+      "mean": 403.13001485884104,
+      "median": 360.0,
+      "p25": 360.0,
+      "p75": 480.0
+    },
+    "unique_resolutions": 67,
+    "common_resolutions": [
+      {
+        "width": 640,
+        "height": 360,
+        "count": 1796
+      },
+      {
+        "width": 640,
+        "height": 480,
+        "count": 1777
+      },
+      {
+        "width": 320,
+        "height": 240,
+        "count": 363
+      },
+      {
+        "width": 300,
+        "height": 168,
+        "count": 19
+      },
+      {
+        "width": 299,
+        "height": 168,
+        "count": 6
+      },
+      {
+        "width": 700,
+        "height": 394,
+        "count": 3
+      },
+      {
+        "width": 281,
+        "height": 179,
+        "count": 3
+      },
+      {
+        "width": 310,
+        "height": 163,
+        "count": 3
+      },
+      {
+        "width": 275,
+        "height": 183,
+        "count": 3
+      },
+      {
+        "width": 1200,
+        "height": 675,
+        "count": 2
+      },
+      {
+        "width": 286,
+        "height": 176,
+        "count": 2
+      },
+      {
+        "width": 293,
+        "height": 172,
+        "count": 2
+      },
+      {
+        "width": 278,
+        "height": 181,
+        "count": 2
+      },
+      {
+        "width": 485,
+        "height": 273,
+        "count": 2
+      },
+      {
+        "width": 800,
+        "height": 533,
+        "count": 2
+      }
+    ]
+  },
+  "aspect_ratio": {
+    "min": 0.7142857142857143,
+    "max": 2.976923076923077,
+    "mean": 1.5396121284016104,
+    "median": 1.3333333333333333,
+    "p25": 1.3333333333333333,
+    "p75": 1.7777777777777777
+  },
+  "small_thresholds": {
+    "either_side_lt_64": 0,
+    "either_side_lt_128": 1,
+    "either_side_lt_224": 58,
+    "both_sides_gte_224": 3980
+  },
+  "unusual_examples": {
+    "widest": [
+      {
+        "path": "Final Dataset/training/Traffic Jam/images50.jpg",
+        "width": 387,
+        "height": 130,
+        "aspect_ratio": 2.976923076923077
+      },
+      {
+        "path": "Final Dataset/training/Traffic Jam/images47.jpg",
+        "width": 333,
+        "height": 151,
+        "aspect_ratio": 2.205298013245033
+      },
+      {
+        "path": "Final Dataset/training/Traffic Jam/curata__bHKO9gXurDeOFAn.jpeg",
+        "width": 1600,
+        "height": 800,
+        "aspect_ratio": 2.0
+      },
+      {
+        "path": "Final Dataset/training/Traffic Jam/images42.jpg",
+        "width": 318,
+        "height": 159,
+        "aspect_ratio": 2.0
+      },
+      {
+        "path": "Final Dataset/training/Traffic Jam/images35.jpg",
+        "width": 311,
+        "height": 162,
+        "aspect_ratio": 1.9197530864197532
+      },
+      {
+        "path": "Final Dataset/training/Traffic Jam/AP_129208222545_georgia_traffic.jpg",
+        "width": 1200,
+        "height": 630,
+        "aspect_ratio": 1.9047619047619047
+      },
+      {
+        "path": "Final Dataset/training/Traffic Jam/image20.jpeg",
+        "width": 310,
+        "height": 163,
+        "aspect_ratio": 1.901840490797546
+      },
+      {
+        "path": "Final Dataset/training/Traffic Jam/images66.jpg",
+        "width": 310,
+        "height": 163,
+        "aspect_ratio": 1.901840490797546
+      },
+      {
+        "path": "Final Dataset/training/Traffic Jam/images67.jpg",
+        "width": 310,
+        "height": 163,
+        "aspect_ratio": 1.901840490797546
+      },
+      {
+        "path": "Final Dataset/validation/Traffic Jam/images84.jpg",
+        "width": 309,
+        "height": 163,
+        "aspect_ratio": 1.8957055214723926
+      }
+    ],
+    "tallest": [
+      {
+        "path": "Final Dataset/training/High/151-not_low_volume.jpg",
+        "width": 250,
+        "height": 350,
+        "aspect_ratio": 0.7142857142857143
+      },
+      {
+        "path": "Final Dataset/testing/Traffic Jam/2ed274cf-4d75-4057-94d1-3f1fc4b73f0c.jpg",
+        "width": 111,
+        "height": 119,
+        "aspect_ratio": 0.9327731092436975
+      },
+      {
+        "path": "Final Dataset/training/Traffic Jam/responsive_medium_KDxAAOItS2r3spxL0LCUaNW218akB5SKCmF2fBk0EHo.jpg",
+        "width": 258,
+        "height": 273,
+        "aspect_ratio": 0.945054945054945
+      },
+      {
+        "path": "Final Dataset/validation/Empty/39cd1ddb-11e1-439a-961d-b164daf646e7.jpg",
+        "width": 354,
+        "height": 275,
+        "aspect_ratio": 1.2872727272727273
+      },
+      {
+        "path": "Final Dataset/testing/Empty/01d0f221-a94d-44ce-ba07-462f2f46f62c.jpg",
+        "width": 320,
+        "height": 240,
+        "aspect_ratio": 1.3333333333333333
+      },
+      {
+        "path": "Final Dataset/testing/Empty/0a175e12-bade-49c4-ad00-c07329ce5fd4.jpg",
+        "width": 320,
+        "height": 240,
+        "aspect_ratio": 1.3333333333333333
+      },
+      {
+        "path": "Final Dataset/testing/Empty/0a37454f-40c2-4302-9e8b-23af7b95875b.jpg",
+        "width": 320,
+        "height": 240,
+        "aspect_ratio": 1.3333333333333333
+      },
+      {
+        "path": "Final Dataset/testing/Empty/0a7b874b-20dd-4ab2-b2ed-89645e4c20bc.jpg",
+        "width": 640,
+        "height": 480,
+        "aspect_ratio": 1.3333333333333333
+      },
+      {
+        "path": "Final Dataset/testing/Empty/0a86cfa7-7b99-4ce7-8da8-42c51d2eafff.jpg",
+        "width": 640,
+        "height": 480,
+        "aspect_ratio": 1.3333333333333333
+      },
+      {
+        "path": "Final Dataset/testing/Empty/0cbd5303-a5c9-4e3c-ae33-310e06e49838.jpg",
+        "width": 320,
+        "height": 240,
+        "aspect_ratio": 1.3333333333333333
+      }
+    ],
+    "smallest": [
+      {
+        "path": "Final Dataset/testing/Traffic Jam/2ed274cf-4d75-4057-94d1-3f1fc4b73f0c.jpg",
+        "width": 111,
+        "height": 119
+      },
+      {
+        "path": "Final Dataset/testing/Traffic Jam/images102.jpg",
+        "width": 282,
+        "height": 178
+      },
+      {
+        "path": "Final Dataset/testing/Traffic Jam/images97.jpg",
+        "width": 299,
+        "height": 168
+      },
+      {
+        "path": "Final Dataset/training/Traffic Jam/image27.jpeg",
+        "width": 299,
+        "height": 168
+      },
+      {
+        "path": "Final Dataset/training/Traffic Jam/images13.jpg",
+        "width": 299,
+        "height": 168
+      },
+      {
+        "path": "Final Dataset/training/Traffic Jam/images2.jpg",
+        "width": 299,
+        "height": 168
+      },
+      {
+        "path": "Final Dataset/training/Traffic Jam/images53.jpg",
+        "width": 299,
+        "height": 168
+      },
+      {
+        "path": "Final Dataset/training/Traffic Jam/images61.jpg",
+        "width": 299,
+        "height": 168
+      },
+      {
+        "path": "Final Dataset/training/Traffic Jam/images96.jpg",
+        "width": 259,
+        "height": 194
+      },
+      {
+        "path": "Final Dataset/testing/Traffic Jam/images126.jpg",
+        "width": 301,
+        "height": 167
+      }
+    ],
+    "largest": [
+      {
+        "path": "Final Dataset/training/Traffic Jam/150277323.jpg",
+        "width": 4256,
+        "height": 2832
+      },
+      {
+        "path": "Final Dataset/training/Traffic Jam/GettyImages-469981581.jpg",
+        "width": 2400,
+        "height": 1800
+      },
+      {
+        "path": "Final Dataset/training/Traffic Jam/blog-traffic-congestion-hero2x.jpg",
+        "width": 2176,
+        "height": 1224
+      },
+      {
+        "path": "Final Dataset/testing/Traffic Jam/396814.jpg",
+        "width": 1920,
+        "height": 1252
+      },
+      {
+        "path": "Final Dataset/training/Traffic Jam/getty_523821065_98040.jpg",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "path": "Final Dataset/training/Traffic Jam/Traffic-congestion-iStock-140452002-medium.jpg",
+        "width": 1500,
+        "height": 1000
+      },
+      {
+        "path": "Final Dataset/testing/Traffic Jam/ca-times.brightspotcdn.com.jpg",
+        "width": 1486,
+        "height": 990
+      },
+      {
+        "path": "Final Dataset/testing/Traffic Jam/20210125_DLI-AKS-MN_Ghazipur_border-16_1611613688877_1611613697329.jpg",
+        "width": 1538,
+        "height": 900
+      },
+      {
+        "path": "Final Dataset/training/Traffic Jam/curata__bHKO9gXurDeOFAn.jpeg",
+        "width": 1600,
+        "height": 800
+      },
+      {
+        "path": "Final Dataset/training/High/traffic-density-on-motorway-a40-germany-north-rhine-westphalia-ruhr-EBR073.jpg",
+        "width": 1300,
+        "height": 956
+      }
+    ]
+  },
+  "exact_duplicates": {
+    "groups_total": 142,
+    "files_in_groups": 307,
+    "cross_split_groups": [
+      {
+        "paths": [
+          "Final Dataset/testing/Empty/0a7b874b-20dd-4ab2-b2ed-89645e4c20bc.jpg",
+          "Final Dataset/validation/Empty/0a7b874b-20dd-4ab2-b2ed-89645e4c20bc.jpg"
+        ],
+        "splits": [
+          "testing",
+          "validation"
+        ],
+        "classes": [
+          "Empty"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Empty/0aad5c2c-a166-416a-9d6d-3e5da232a5ae.jpg",
+          "Final Dataset/validation/Empty/0aad5c2c-a166-416a-9d6d-3e5da232a5ae.jpg"
+        ],
+        "splits": [
+          "testing",
+          "validation"
+        ],
+        "classes": [
+          "Empty"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Empty/0ce04417-34b8-491b-9e3c-8f8359c350d6.jpg",
+          "Final Dataset/training/Empty/20cd6332-b2d3-49e4-9550-4c12d7fb2d14.jpg",
+          "Final Dataset/training/Empty/c0101fcc-21a8-402e-acf5-4032029d7c82 (2).jpg",
+          "Final Dataset/training/Empty/c0101fcc-21a8-402e-acf5-4032029d7c82.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "Empty"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Empty/0ce1d078-fcbf-41cb-8124-753740253d58.jpg",
+          "Final Dataset/validation/Empty/0ce1d078-fcbf-41cb-8124-753740253d58.jpg"
+        ],
+        "splits": [
+          "testing",
+          "validation"
+        ],
+        "classes": [
+          "Empty"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Empty/0f4d7f99-3247-458d-9866-50d21d99eafe.jpg",
+          "Final Dataset/validation/Empty/0f4d7f99-3247-458d-9866-50d21d99eafe.jpg"
+        ],
+        "splits": [
+          "testing",
+          "validation"
+        ],
+        "classes": [
+          "Empty"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Empty/1bd184e9-2b48-4aa7-a352-81c46b522ed5.jpg",
+          "Final Dataset/validation/Empty/1bd184e9-2b48-4aa7-a352-81c46b522ed5.jpg"
+        ],
+        "splits": [
+          "testing",
+          "validation"
+        ],
+        "classes": [
+          "Empty"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Empty/1c37fc9a-6910-4711-89bf-4324b75a7e84.jpg",
+          "Final Dataset/validation/Empty/1c37fc9a-6910-4711-89bf-4324b75a7e84.jpg"
+        ],
+        "splits": [
+          "testing",
+          "validation"
+        ],
+        "classes": [
+          "Empty"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Empty/2a27b63f-6dd0-4f0e-97da-c928fc0b02d0(1).jpg",
+          "Final Dataset/training/Empty/2a27b63f-6dd0-4f0e-97da-c928fc0b02d0(2).jpg",
+          "Final Dataset/training/Empty/2a27b63f-6dd0-4f0e-97da-c928fc0b02d0(3).jpg",
+          "Final Dataset/validation/Empty/2a27b63f-6dd0-4f0e-97da-c928fc0b02d0.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "Empty"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Empty/2e9b79b8-eb72-4f9e-aae4-8a4a259c8a45.jpg",
+          "Final Dataset/training/Empty/49dde534-7016-41c1-a417-a1f53bae1511.jpg",
+          "Final Dataset/training/Empty/53ffe1fd-55bc-4992-b89f-fb8a668f16a4.jpg",
+          "Final Dataset/training/Empty/8acfc360-3236-435d-a5a2-478a8050d51b.jpg",
+          "Final Dataset/training/Empty/bd3de933-7061-4b71-9379-2b114c6b0d77 (1).jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "Empty"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Empty/3a06d0a8-6c78-4964-8a85-34495064fcd4.jpg",
+          "Final Dataset/validation/Empty/3a06d0a8-6c78-4964-8a85-34495064fcd4.jpg"
+        ],
+        "splits": [
+          "testing",
+          "validation"
+        ],
+        "classes": [
+          "Empty"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Empty/3afb983d-a3dd-49d8-8465-de08c5b101b7.jpg",
+          "Final Dataset/validation/Empty/3afb983d-a3dd-49d8-8465-de08c5b101b7.jpg"
+        ],
+        "splits": [
+          "testing",
+          "validation"
+        ],
+        "classes": [
+          "Empty"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Empty/3b3c7b48-feec-4cf4-a51b-5300bed54fbb.jpg",
+          "Final Dataset/validation/Empty/3b3c7b48-feec-4cf4-a51b-5300bed54fbb.jpg"
+        ],
+        "splits": [
+          "testing",
+          "validation"
+        ],
+        "classes": [
+          "Empty"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Empty/3c98e03b-59f9-4f34-9be7-ea346838cd79.jpg",
+          "Final Dataset/training/Empty/3c98e03b-59f9-4f34-9be7-ea346838cd79.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "Empty"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/High/0285b1e6-5a2e-4703-a4c7-64f4eefc6f60.jpg",
+          "Final Dataset/training/Medium/0285b1e6-5a2e-4703-a4c7-64f4eefc6f60.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "High",
+          "Medium"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/High/1135d510-e633-4144-9c75-191bbcdbf8ad.jpg",
+          "Final Dataset/training/High/1135d510-e633-4144-9c75-191bbcdbf8ad.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "High"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/High/25ed1e81-0a94-4914-bb38-4cfe78a6b03f.jpg",
+          "Final Dataset/training/High/25ed1e81-0a94-4914-bb38-4cfe78a6b03f.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "High"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/High/2d489551-00b6-40bf-982b-ad9bda97bb1e.jpg",
+          "Final Dataset/validation/High/2d489551-00b6-40bf-982b-ad9bda97bb1e.jpg"
+        ],
+        "splits": [
+          "testing",
+          "validation"
+        ],
+        "classes": [
+          "High"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/High/34b96cd2-fad2-4f19-ae1e-cd51af7ed273.jpg",
+          "Final Dataset/training/High/34b96cd2-fad2-4f19-ae1e-cd51af7ed273.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "High"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/High/5050c989-d986-4cac-a28b-a78e97220ee5.jpg",
+          "Final Dataset/training/High/5050c989-d986-4cac-a28b-a78e97220ee5.jpg",
+          "Final Dataset/validation/High/5050c989-d986-4cac-a28b-a78e97220ee5.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "High"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/High/74f0431c-6463-4da6-8e11-2a5ba3ca2d7d.jpg",
+          "Final Dataset/training/High/74f0431c-6463-4da6-8e11-2a5ba3ca2d7d.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "High"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/High/9964ac09-8d1d-493f-97e5-d011ffa4fcd6.jpg",
+          "Final Dataset/training/High/9964ac09-8d1d-493f-97e5-d011ffa4fcd6.jpg",
+          "Final Dataset/validation/High/9964ac09-8d1d-493f-97e5-d011ffa4fcd6.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "High"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/High/9d8ee333-da7b-4a7c-afe6-8b0522b34ca0.jpg",
+          "Final Dataset/validation/High/9d8ee333-da7b-4a7c-afe6-8b0522b34ca0.jpg"
+        ],
+        "splits": [
+          "testing",
+          "validation"
+        ],
+        "classes": [
+          "High"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/High/a6a5aa5d-18c6-40dd-9d63-50c42416368f.jpg",
+          "Final Dataset/training/High/a6a5aa5d-18c6-40dd-9d63-50c42416368f.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "High"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/High/c2bc5c60-e2a8-4ef8-800d-37f3dfdadf14.jpg",
+          "Final Dataset/validation/High/c2bc5c60-e2a8-4ef8-800d-37f3dfdadf14.jpg"
+        ],
+        "splits": [
+          "testing",
+          "validation"
+        ],
+        "classes": [
+          "High"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/High/c425ced0-e630-4288-b7a2-b3fac71abdc0.jpg",
+          "Final Dataset/training/High/c425ced0-e630-4288-b7a2-b3fac71abdc0.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "High"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Low/02d75e04-88ad-4103-94d7-d15bb3f38cca.jpg",
+          "Final Dataset/training/Low/02d75e04-88ad-4103-94d7-d15bb3f38cca.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "Low"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Low/13f2bdda-e206-4827-b2f4-c5b6fe079df6.jpg",
+          "Final Dataset/training/Low/13f2bdda-e206-4827-b2f4-c5b6fe079df6.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "Low"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Low/14aecfe9-3114-449f-806f-f581c7ff37fe.jpg",
+          "Final Dataset/training/Low/14aecfe9-3114-449f-806f-f581c7ff37fe.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "Low"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Low/1ae759ab-7e37-4cff-83b4-53b32c16f764.jpg",
+          "Final Dataset/validation/Low/1ae759ab-7e37-4cff-83b4-53b32c16f764.jpg"
+        ],
+        "splits": [
+          "testing",
+          "validation"
+        ],
+        "classes": [
+          "Low"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Low/1b839de8-4b43-4708-aaa3-25303815b5a9.jpg",
+          "Final Dataset/validation/Low/1b839de8-4b43-4708-aaa3-25303815b5a9.jpg"
+        ],
+        "splits": [
+          "testing",
+          "validation"
+        ],
+        "classes": [
+          "Low"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Low/1b936f4f-f539-496c-b2c6-a0cce0b2e0d0.jpg",
+          "Final Dataset/validation/Low/1b936f4f-f539-496c-b2c6-a0cce0b2e0d0.jpg"
+        ],
+        "splits": [
+          "testing",
+          "validation"
+        ],
+        "classes": [
+          "Low"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Low/1c4c9e7c-2af5-42d2-b0b7-2716020fc69e.jpg",
+          "Final Dataset/training/Low/1c4c9e7c-2af5-42d2-b0b7-2716020fc69e.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "Low"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Low/1c665d53-01f1-468a-ae73-7cd3e17ec3f5.jpg",
+          "Final Dataset/training/Low/1c665d53-01f1-468a-ae73-7cd3e17ec3f5.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "Low"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Low/1dc9237c-24a0-4a50-a526-f36f4b3d6ef1.jpg",
+          "Final Dataset/validation/Low/1dc9237c-24a0-4a50-a526-f36f4b3d6ef1.jpg"
+        ],
+        "splits": [
+          "testing",
+          "validation"
+        ],
+        "classes": [
+          "Low"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Low/24f9eda6-dc79-4625-9c25-30dfa4ca9ff4.jpg",
+          "Final Dataset/training/Low/24f9eda6-dc79-4625-9c25-30dfa4ca9ff4.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "Low"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Low/49e138c8-9cc9-428b-951e-ba467d3f4f7d.jpg",
+          "Final Dataset/training/Medium/49e138c8-9cc9-428b-951e-ba467d3f4f7d.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "Low",
+          "Medium"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Low/49f53144-0a59-4411-9634-b52b1e6124fc.jpg",
+          "Final Dataset/training/Low/49f53144-0a59-4411-9634-b52b1e6124fc.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "Low"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Low/7b2f7063-91f3-43b4-b2ea-96d8bef88468.jpg",
+          "Final Dataset/training/Low/7b2f7063-91f3-43b4-b2ea-96d8bef88468.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "Low"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Low/7ed22748-c098-4d52-bebf-1517b92afa5b.jpg",
+          "Final Dataset/training/Low/7ed22748-c098-4d52-bebf-1517b92afa5b.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "Low"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Low/7f288ca3-3ca1-44ee-85f0-6b9191bba412.jpg",
+          "Final Dataset/training/Low/7f288ca3-3ca1-44ee-85f0-6b9191bba412.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "Low"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Low/8dce8fcd-2a69-4baf-b885-2c281c2befaf.jpg",
+          "Final Dataset/validation/Low/8dce8fcd-2a69-4baf-b885-2c281c2befaf.jpg"
+        ],
+        "splits": [
+          "testing",
+          "validation"
+        ],
+        "classes": [
+          "Low"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Low/8e649a4e-1d41-461d-94d5-a89e7fea9eef.jpg",
+          "Final Dataset/validation/Low/8e649a4e-1d41-461d-94d5-a89e7fea9eef.jpg"
+        ],
+        "splits": [
+          "testing",
+          "validation"
+        ],
+        "classes": [
+          "Low"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Low/9b041343-9721-4560-88af-06bcbef5f728.jpg",
+          "Final Dataset/training/Low/9b041343-9721-4560-88af-06bcbef5f728.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "Low"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Low/9b6d89af-3e21-4f8d-9f19-53c7c4360f97.jpg",
+          "Final Dataset/training/Low/9b6d89af-3e21-4f8d-9f19-53c7c4360f97.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "Low"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Low/9f2a9917-6d01-4cf1-97c4-11cb9c91b213.jpg",
+          "Final Dataset/training/Low/9f2a9917-6d01-4cf1-97c4-11cb9c91b213.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "Low"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Medium/1a0b5361-a2f7-4679-92b9-0f18608d3481.jpg",
+          "Final Dataset/validation/Medium/1a0b5361-a2f7-4679-92b9-0f18608d3481.jpg"
+        ],
+        "splits": [
+          "testing",
+          "validation"
+        ],
+        "classes": [
+          "Medium"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Medium/1d5afdcb-b436-4f1b-8625-2092b9d85799.jpg",
+          "Final Dataset/validation/Medium/1d5afdcb-b436-4f1b-8625-2092b9d85799.jpg"
+        ],
+        "splits": [
+          "testing",
+          "validation"
+        ],
+        "classes": [
+          "Medium"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Medium/3dc9f3ef-d37d-4221-a64e-0a9a329f85ca.jpg",
+          "Final Dataset/training/Medium/3dc9f3ef-d37d-4221-a64e-0a9a329f85ca.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "Medium"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Medium/45d90a97-ce4b-4a3c-bdc4-cf84ad4cedaa.jpg",
+          "Final Dataset/training/Medium/45d90a97-ce4b-4a3c-bdc4-cf84ad4cedaa.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "Medium"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Medium/4ee4826d-d12a-4665-a644-807ed1e8f955.jpg",
+          "Final Dataset/validation/Medium/4ee4826d-d12a-4665-a644-807ed1e8f955.jpg"
+        ],
+        "splits": [
+          "testing",
+          "validation"
+        ],
+        "classes": [
+          "Medium"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Medium/50f0e0bc-df24-4419-9b09-d61191d11eb0.jpg",
+          "Final Dataset/training/Medium/50f0e0bc-df24-4419-9b09-d61191d11eb0.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "Medium"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Medium/54f8ac4c-6828-4390-8cbf-3600b228c58c.jpg",
+          "Final Dataset/training/Medium/54f8ac4c-6828-4390-8cbf-3600b228c58c.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "Medium"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Medium/60a6e195-9a82-4c5b-b212-40d6c7ef4aac.jpg",
+          "Final Dataset/training/Medium/60a6e195-9a82-4c5b-b212-40d6c7ef4aac.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "Medium"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Medium/66cc2e28-5bae-4512-8857-6ffab7aab65c.jpg",
+          "Final Dataset/training/Medium/66cc2e28-5bae-4512-8857-6ffab7aab65c.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "Medium"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Medium/68c7e7d5-7404-42c4-b95d-7c532dca709f.jpg",
+          "Final Dataset/training/Medium/68c7e7d5-7404-42c4-b95d-7c532dca709f.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "Medium"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Medium/6bf826f5-cff1-44c6-8dcc-01fe84952523.jpg",
+          "Final Dataset/training/Medium/6bf826f5-cff1-44c6-8dcc-01fe84952523.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "Medium"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Medium/82f53d99-0628-411b-aac0-f8d1473a2c41.jpg",
+          "Final Dataset/training/Medium/82f53d99-0628-411b-aac0-f8d1473a2c41.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "Medium"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Medium/b67cae19-1b8f-4fe2-af58-b5d466bad78e.jpg",
+          "Final Dataset/training/Medium/b67cae19-1b8f-4fe2-af58-b5d466bad78e.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "Medium"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Medium/d7c81ff3-3f60-4422-b925-66d7c200e342.jpg",
+          "Final Dataset/training/Medium/d7c81ff3-3f60-4422-b925-66d7c200e342.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "Medium"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Traffic Jam/3F12BCA8-1CC1-4726-AF44-3F117A542B9F_cx0_cy9_cw0_w1200_r1.jpg",
+          "Final Dataset/training/Traffic Jam/3F12BCA8-1CC1-4726-AF44-3F117A542B9F_cx0_cy9_cw0_w1200_r1.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "Traffic Jam"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Traffic Jam/4a471c2d-cf88-4618-9449-d069a30b62fc (2).jpg",
+          "Final Dataset/testing/Traffic Jam/4a471c2d-cf88-4618-9449-d069a30b62fc.jpg",
+          "Final Dataset/training/Traffic Jam/4a471c2d-cf88-4618-9449-d069a30b62fc (2).jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "Traffic Jam"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Traffic Jam/4baf7c22-e9bf-45cf-8e4c-da2aca5d8a67.jpg",
+          "Final Dataset/training/Traffic Jam/4baf7c22-e9bf-45cf-8e4c-da2aca5d8a67.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "Traffic Jam"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Traffic Jam/5c076bc3-7387-46ed-a04b-5fd4cab4c2f4.jpg",
+          "Final Dataset/training/Traffic Jam/5c076bc3-7387-46ed-a04b-5fd4cab4c2f4.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "Traffic Jam"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Traffic Jam/6d20025c-1548-4e59-a4c0-160454cc0467.jpg",
+          "Final Dataset/training/Traffic Jam/6d20025c-1548-4e59-a4c0-160454cc0467.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "Traffic Jam"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/testing/Traffic Jam/6ea0e8a3-89c2-4f65-a2b8-5ed1e046d53c.jpg",
+          "Final Dataset/training/Traffic Jam/6ea0e8a3-89c2-4f65-a2b8-5ed1e046d53c.jpg"
+        ],
+        "splits": [
+          "testing",
+          "training"
+        ],
+        "classes": [
+          "Traffic Jam"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/Empty/005c5c56-aca7-4f3b-88d7-f0c0b99bc1a7 (1).jpg",
+          "Final Dataset/validation/Empty/005c5c56-aca7-4f3b-88d7-f0c0b99bc1a7.jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "Empty"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/Empty/31e930b2-596e-47e5-b33c-4eb46ada89fa.jpg",
+          "Final Dataset/validation/Empty/31e930b2-596e-47e5-b33c-4eb46ada89fa.jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "Empty"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/Empty/39f0e895-5e8d-4aec-8890-18b30b604164.jpg",
+          "Final Dataset/validation/Empty/39f0e895-5e8d-4aec-8890-18b30b604164.jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "Empty"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/Empty/3e56cb1f-4b9a-4d7b-b958-e972516bdf58.jpg",
+          "Final Dataset/validation/Empty/3e56cb1f-4b9a-4d7b-b958-e972516bdf58.jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "Empty"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/Empty/41c61429-753f-425a-861e-31a7a5c4e813.jpg",
+          "Final Dataset/validation/Empty/41c61429-753f-425a-861e-31a7a5c4e813.jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "Empty"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/Empty/44bf0759-1080-4a6d-ad0f-30e683cdf813.jpg",
+          "Final Dataset/validation/Empty/44bf0759-1080-4a6d-ad0f-30e683cdf813.jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "Empty"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/Empty/52857e96-4d96-4bd2-924a-35586cf22900 (1).jpg",
+          "Final Dataset/validation/Empty/3f4e3b8e-17c8-4630-92fe-9f93b3ceaeb3 (1).jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "Empty"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/Empty/5dba4cf2-47f3-4578-9598-338682ac272b.jpg",
+          "Final Dataset/validation/Empty/5dba4cf2-47f3-4578-9598-338682ac272b.jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "Empty"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/Empty/67ee6c06-58a4-4785-9817-cc20e2c4d65a.jpg",
+          "Final Dataset/validation/Empty/67ee6c06-58a4-4785-9817-cc20e2c4d65a.jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "Empty"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/High/4e62f338-8ad8-4c75-abf5-28a92a614371.jpg",
+          "Final Dataset/validation/High/4e62f338-8ad8-4c75-abf5-28a92a614371.jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "High"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/High/dc9b1d39-10b3-4259-b1aa-c2fbf6862121.jpg",
+          "Final Dataset/validation/High/dc9b1d39-10b3-4259-b1aa-c2fbf6862121.jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "High"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/High/df012625-cf16-4367-b37a-f944fbb62eee.jpg",
+          "Final Dataset/validation/High/df012625-cf16-4367-b37a-f944fbb62eee.jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "High"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/High/e3c2b00d-2596-447c-8da1-44be2bfffbf9.jpg",
+          "Final Dataset/validation/High/e3c2b00d-2596-447c-8da1-44be2bfffbf9.jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "High"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/High/e5d3fa3f-8848-4592-a123-bfb66dfefc25.jpg",
+          "Final Dataset/validation/High/e5d3fa3f-8848-4592-a123-bfb66dfefc25.jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "High"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/High/ecdb16c5-1fe5-456e-9dfb-5d4c20d1abf4.jpg",
+          "Final Dataset/validation/High/ecdb16c5-1fe5-456e-9dfb-5d4c20d1abf4.jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "High"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/Low/064caee1-56e9-4583-bf2e-ef5dbc811a11.jpg",
+          "Final Dataset/validation/Low/064caee1-56e9-4583-bf2e-ef5dbc811a11.jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "Low"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/Low/58ca2b23-3b07-4b4a-b8cd-d3f608fcdb3f.jpg",
+          "Final Dataset/validation/Low/58ca2b23-3b07-4b4a-b8cd-d3f608fcdb3f.jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "Low"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/Low/58e47ea1-278b-43f6-a1f9-31f2be0c8681.jpg",
+          "Final Dataset/validation/Low/58e47ea1-278b-43f6-a1f9-31f2be0c8681.jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "Low"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/Low/62dd2f85-a200-4eb8-880d-7942389c6084.jpg",
+          "Final Dataset/validation/Low/62dd2f85-a200-4eb8-880d-7942389c6084.jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "Low"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/Low/6ae37c12-477a-4c52-9913-273d444db4a3.jpg",
+          "Final Dataset/validation/Low/6ae37c12-477a-4c52-9913-273d444db4a3.jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "Low"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/Low/aa61f384-d4a9-426a-ab83-ca1130fcaed6.jpg",
+          "Final Dataset/validation/Low/aa61f384-d4a9-426a-ab83-ca1130fcaed6.jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "Low"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/Low/ab5a62bf-d34f-46ef-a6fa-43fab9e25893.jpg",
+          "Final Dataset/validation/Low/ab5a62bf-d34f-46ef-a6fa-43fab9e25893.jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "Low"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/Low/abfb4b69-5cef-4fcf-9d07-c6726558502c.jpg",
+          "Final Dataset/validation/Low/abfb4b69-5cef-4fcf-9d07-c6726558502c.jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "Low"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/Low/ac0aafba-196b-43b9-9dbd-f837903408b9.jpg",
+          "Final Dataset/validation/Low/ac0aafba-196b-43b9-9dbd-f837903408b9.jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "Low"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/Low/acc84560-6c01-4d01-ba06-ea8fafe5dfc3.jpg",
+          "Final Dataset/validation/Low/acc84560-6c01-4d01-ba06-ea8fafe5dfc3.jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "Low"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/Low/ad10b96f-a915-4f57-84d8-70199326b1e4.jpg",
+          "Final Dataset/validation/Low/ad10b96f-a915-4f57-84d8-70199326b1e4.jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "Low"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/Low/b1981f71-d58d-4574-a51f-994d0ad962c2.jpg",
+          "Final Dataset/validation/Low/b1981f71-d58d-4574-a51f-994d0ad962c2.jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "Low"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/Low/bb3a3eef-4d10-46f2-9cc9-c2b60abb7769.jpg",
+          "Final Dataset/validation/Low/bb3a3eef-4d10-46f2-9cc9-c2b60abb7769.jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "Low"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/Medium/069199b3-88d6-49b7-a819-4b46eed49d02.jpg",
+          "Final Dataset/validation/Medium/069199b3-88d6-49b7-a819-4b46eed49d02.jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "Medium"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/Medium/1839cc7e-d896-49f3-95a9-851946a62cb2.jpg",
+          "Final Dataset/validation/Medium/1839cc7e-d896-49f3-95a9-851946a62cb2.jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "Medium"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/Medium/1e946cc1-9165-4122-a339-8d4941090236.jpg",
+          "Final Dataset/validation/Medium/1e946cc1-9165-4122-a339-8d4941090236.jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "Medium"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/Medium/2252cc59-3ad3-4088-9d05-c2a32eba5245.jpg",
+          "Final Dataset/validation/Medium/2252cc59-3ad3-4088-9d05-c2a32eba5245.jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "Medium"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/Medium/342325d4-cd33-4a82-8bba-ed9a8bb4165b.jpg",
+          "Final Dataset/validation/Medium/342325d4-cd33-4a82-8bba-ed9a8bb4165b.jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "Medium"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/Medium/5045b0ac-c832-48a7-aaa7-dd4f990d47ef (1).jpg",
+          "Final Dataset/training/Medium/5045b0ac-c832-48a7-aaa7-dd4f990d47ef.jpg",
+          "Final Dataset/validation/Medium/5045b0ac-c832-48a7-aaa7-dd4f990d47ef.jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "Medium"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/Medium/548328da-e975-4f11-96ae-c9f3659bee9e.jpg",
+          "Final Dataset/validation/Medium/548328da-e975-4f11-96ae-c9f3659bee9e.jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "Medium"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/Medium/7474b100-cc5d-47fe-9c17-22df4d2bea48.jpg",
+          "Final Dataset/validation/Medium/7474b100-cc5d-47fe-9c17-22df4d2bea48.jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "Medium"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/Medium/78161cee-486c-457d-9525-24295bee87b4.jpg",
+          "Final Dataset/validation/Medium/78161cee-486c-457d-9525-24295bee87b4.jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "Medium"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/Medium/879c9912-05c4-4e5f-a851-7dad51ddd714.jpg",
+          "Final Dataset/validation/Medium/879c9912-05c4-4e5f-a851-7dad51ddd714.jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "Medium"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/Medium/8a25380d-9f2e-4139-9844-f7802a61faa2.jpg",
+          "Final Dataset/validation/Medium/8a25380d-9f2e-4139-9844-f7802a61faa2.jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "Medium"
+        ]
+      },
+      {
+        "paths": [
+          "Final Dataset/training/Traffic Jam/e4f0bb0b-4150-4f87-ae9d-5c18e8ea605e.jpg",
+          "Final Dataset/validation/Traffic Jam/e4f0bb0b-4150-4f87-ae9d-5c18e8ea605e.jpg"
+        ],
+        "splits": [
+          "training",
+          "validation"
+        ],
+        "classes": [
+          "Traffic Jam"
+        ]
+      }
+    ],
+    "cross_split_pair_counts": {
+      "testing ↔ validation": 24,
+      "testing ↔ training": 51,
+      "training ↔ validation": 45
+    },
+    "conflicting_label_pairs": 5
+  },
+  "near_duplicates_dhash_le_2": {
+    "method": "64-bit difference hash (dHash), grayscale 9x8, cross-split only, Hamming distance <= 2; byte-identical files excluded",
+    "pairs_total": 895,
+    "pair_counts": {
+      "testing ↔ training": 322,
+      "testing ↔ validation": 53,
+      "training ↔ validation": 520
+    },
+    "conflicting_label_pairs": 277,
+    "examples": [
+      {
+        "path1": "Final Dataset/testing/Empty/00a2d16e-742e-469f-a23a-631ad49ec790.jpg",
+        "path2": "Final Dataset/training/Empty/ab451260-6087-4d19-8951-20137d757a09.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/testing/Empty/00a2d16e-742e-469f-a23a-631ad49ec790.jpg",
+        "path2": "Final Dataset/training/Empty/da1f09de-6af6-464f-9243-e699c4c43a04.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/testing/Empty/00a2d16e-742e-469f-a23a-631ad49ec790.jpg",
+        "path2": "Final Dataset/training/Empty/e8724e85-9d20-49a7-8d4d-0a622b63323e.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/testing/Empty/0acd3ef9-fa98-4e37-aca9-58e4848e36fd.jpg",
+        "path2": "Final Dataset/training/Empty/22276dcd-3bc0-4ac2-a014-cdaa9431eb87.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/testing/Empty/0acd3ef9-fa98-4e37-aca9-58e4848e36fd.jpg",
+        "path2": "Final Dataset/training/Empty/32f0f0f5-aeaa-44e1-a0fe-d3d78158b276.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/testing/Empty/0acd3ef9-fa98-4e37-aca9-58e4848e36fd.jpg",
+        "path2": "Final Dataset/training/Empty/467461c0-3b74-4c1c-9e9e-8657d97ce6f5.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/testing/Empty/0acd3ef9-fa98-4e37-aca9-58e4848e36fd.jpg",
+        "path2": "Final Dataset/training/Empty/ac9dd8da-2cd0-4891-9263-144e19b10a57.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/testing/Empty/2bd2cfba-411b-44ec-8e0c-97d54a6d461d.jpg",
+        "path2": "Final Dataset/training/Empty/22276dcd-3bc0-4ac2-a014-cdaa9431eb87.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/testing/Empty/2bd2cfba-411b-44ec-8e0c-97d54a6d461d.jpg",
+        "path2": "Final Dataset/training/Empty/32f0f0f5-aeaa-44e1-a0fe-d3d78158b276.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/testing/Empty/2bd2cfba-411b-44ec-8e0c-97d54a6d461d.jpg",
+        "path2": "Final Dataset/training/Empty/467461c0-3b74-4c1c-9e9e-8657d97ce6f5.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/testing/Empty/2bd2cfba-411b-44ec-8e0c-97d54a6d461d.jpg",
+        "path2": "Final Dataset/training/Empty/ac9dd8da-2cd0-4891-9263-144e19b10a57.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/testing/Empty/2fd52e68-7fa9-4a89-add8-ca3d76de125b.jpg",
+        "path2": "Final Dataset/training/Empty/b27d0773-685c-4c56-8aba-f3e87f8861d9.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/testing/Empty/3adeda15-3505-4a1e-a4b7-abf8a75d4749.jpg",
+        "path2": "Final Dataset/validation/Empty/4a655eef-12b7-405b-b92e-771a409c476f.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/testing/Empty/3afb983d-a3dd-49d8-8465-de08c5b101b7.jpg",
+        "path2": "Final Dataset/training/Empty/7c7d1e37-646c-44fb-8c6f-6daf283c6f66.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/testing/Empty/3afb983d-a3dd-49d8-8465-de08c5b101b7.jpg",
+        "path2": "Final Dataset/training/Empty/a2d54384-98ef-42fe-b17e-9c9d09039080.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/testing/Empty/3afb983d-a3dd-49d8-8465-de08c5b101b7.jpg",
+        "path2": "Final Dataset/validation/Empty/0e52a186-4615-4289-8582-3ed600a5fc10.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/testing/Empty/3afb983d-a3dd-49d8-8465-de08c5b101b7.jpg",
+        "path2": "Final Dataset/validation/Empty/0e5ea3d1-e8e0-4767-a2b8-ec14315896c3.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/testing/Empty/3b25c90d-5760-4e90-a7c3-ed833ce0702e.jpg",
+        "path2": "Final Dataset/training/Empty/4ef34e95-017d-4302-b844-74b991946337.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/testing/Empty/3bc42c9b-7fe2-461d-a9c6-2a14669914e4.jpg",
+        "path2": "Final Dataset/training/Empty/247a326c-1a80-45e8-8136-90a9f7b1bcdb.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/testing/Empty/3bc42c9b-7fe2-461d-a9c6-2a14669914e4.jpg",
+        "path2": "Final Dataset/training/Empty/5eee4aca-e15b-4d8f-802e-e38ef0ceb8c4.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/testing/Empty/3bc42c9b-7fe2-461d-a9c6-2a14669914e4.jpg",
+        "path2": "Final Dataset/training/Empty/b8e7d419-97f0-492d-a153-03848de3a6f6.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/testing/Empty/3bc42c9b-7fe2-461d-a9c6-2a14669914e4.jpg",
+        "path2": "Final Dataset/training/Empty/c3b48d0c-fb5d-42df-995e-488995982636.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/testing/Empty/3bc42c9b-7fe2-461d-a9c6-2a14669914e4.jpg",
+        "path2": "Final Dataset/validation/Empty/0b63dba6-17d1-4f79-bf2b-a954dfc307a8.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/testing/Empty/3ca1d037-0341-48a3-981d-037f0c9e1986.jpg",
+        "path2": "Final Dataset/training/Empty/ae682690-6ae3-4a27-8f42-c3eb6208f009.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/testing/Empty/3df0541d-fe24-41dd-bfc6-4ddf67f2c0f7.jpg",
+        "path2": "Final Dataset/training/Empty/401e26ff-5b77-448e-a852-72378abc6cc7.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/testing/Empty/5bdd9010-9495-401e-b461-6ede684d3ac3.jpg",
+        "path2": "Final Dataset/training/Empty/05548d69-d356-4814-8882-49ded0d44dd6.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/testing/Empty/5bdd9010-9495-401e-b461-6ede684d3ac3.jpg",
+        "path2": "Final Dataset/training/Empty/9686ad6d-57e7-40c4-9358-f7b7b78913d7.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/testing/Empty/5bdd9010-9495-401e-b461-6ede684d3ac3.jpg",
+        "path2": "Final Dataset/training/Empty/f79d559b-308d-42a5-9e4f-bb36da580c99.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/testing/Low/1dc9237c-24a0-4a50-a526-f36f4b3d6ef1.jpg",
+        "path2": "Final Dataset/training/Medium/58063234-5fc8-4019-bceb-b1b46a8808d2.jpg",
+        "distance": 0,
+        "same_class": false
+      },
+      {
+        "path1": "Final Dataset/testing/Low/1dc9237c-24a0-4a50-a526-f36f4b3d6ef1.jpg",
+        "path2": "Final Dataset/training/Medium/a2e03060-f01b-4f56-a07d-cbbf6ca93a5d.jpg",
+        "distance": 0,
+        "same_class": false
+      },
+      {
+        "path1": "Final Dataset/testing/Low/4c379497-ef10-425b-a4bb-cc56a44e24f6.jpg",
+        "path2": "Final Dataset/training/Medium/46a2ef6b-5167-43f5-bc02-1cef9364e162.jpg",
+        "distance": 0,
+        "same_class": false
+      },
+      {
+        "path1": "Final Dataset/testing/Low/4e1058ed-a582-423e-a703-e90d837fcc7a.jpg",
+        "path2": "Final Dataset/training/Empty/467f59a2-d832-4e2c-b97a-066ffd54e922.jpg",
+        "distance": 0,
+        "same_class": false
+      },
+      {
+        "path1": "Final Dataset/testing/Medium/3dc9f3ef-d37d-4221-a64e-0a9a329f85ca.jpg",
+        "path2": "Final Dataset/training/Medium/b7330336-ab80-43a7-8811-dec6bb95beb3.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/testing/Traffic Jam/101116traffic3_960x540.jpg",
+        "path2": "Final Dataset/training/Traffic Jam/image16.jpeg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/testing/Traffic Jam/396814.jpg",
+        "path2": "Final Dataset/training/Traffic Jam/image11.jpeg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/testing/Traffic Jam/47113704_401.jpg",
+        "path2": "Final Dataset/training/Traffic Jam/image27.jpeg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/testing/Traffic Jam/904237-untitled-design.jpg",
+        "path2": "Final Dataset/training/Traffic Jam/images16.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/0473f5a5-f9ae-4c62-beb2-ebaf2886b6a7.jpg",
+        "path2": "Final Dataset/validation/Empty/2c6e6d21-55e0-44d0-a13b-5a06c84bdd0d.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/06669e06-edc6-49bb-b30e-c7ac66cba07b.jpg",
+        "path2": "Final Dataset/validation/Empty/0d59c77e-2df0-474b-91a2-f94d4e5a51de.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/06bc2a9e-05eb-4758-9742-2070972ae248.jpg",
+        "path2": "Final Dataset/validation/Empty/03f2b0e3-3305-4db6-90a6-b6b2e882da9a.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/13dd3bb4-9d17-45b9-8b9d-82bd7bb09629.jpg",
+        "path2": "Final Dataset/validation/Empty/0cdd34a7-d5fe-4975-92c4-3deb8ca7da04.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/14bb86d2-28be-4159-a10f-38071ce182b6.jpg",
+        "path2": "Final Dataset/validation/Empty/03f2b0e3-3305-4db6-90a6-b6b2e882da9a.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/22957527-3004-431a-9d68-5e789733a5f5.jpg",
+        "path2": "Final Dataset/validation/Empty/0fd4854e-813d-43d4-b0d5-52dce1ecc656.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/247a326c-1a80-45e8-8136-90a9f7b1bcdb.jpg",
+        "path2": "Final Dataset/validation/Empty/0b63dba6-17d1-4f79-bf2b-a954dfc307a8.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/50c27c63-00ca-4530-a70a-4476578b6f46.jpg",
+        "path2": "Final Dataset/validation/Empty/03f2b0e3-3305-4db6-90a6-b6b2e882da9a.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/55e7d2d5-4c1a-4ac8-8ae9-67a780bf4020.jpg",
+        "path2": "Final Dataset/validation/Empty/2c6e6d21-55e0-44d0-a13b-5a06c84bdd0d.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/5be96f7f-9cb5-494c-ac32-385e7bb53432.jpg",
+        "path2": "Final Dataset/validation/Empty/1a705277-0ab0-42b7-9e45-b0fc2be08c8d.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/5eee4aca-e15b-4d8f-802e-e38ef0ceb8c4.jpg",
+        "path2": "Final Dataset/validation/Empty/0b63dba6-17d1-4f79-bf2b-a954dfc307a8.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/6b5d575a-689a-4557-953b-7eb25716f3af.jpg",
+        "path2": "Final Dataset/validation/Empty/0cdd34a7-d5fe-4975-92c4-3deb8ca7da04.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/6fc86a29-fde4-4c32-a825-f23d88c86426.jpg",
+        "path2": "Final Dataset/validation/Empty/03f2b0e3-3305-4db6-90a6-b6b2e882da9a.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/7c3bbc9c-7dee-45d4-a30e-0d9614e7b509.jpg",
+        "path2": "Final Dataset/validation/Empty/2cbe806f-5d6e-48a8-b6f4-233beebb2f90.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/7c7d1e37-646c-44fb-8c6f-6daf283c6f66.jpg",
+        "path2": "Final Dataset/validation/Empty/0e52a186-4615-4289-8582-3ed600a5fc10.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/7c7d1e37-646c-44fb-8c6f-6daf283c6f66.jpg",
+        "path2": "Final Dataset/validation/Empty/0e5ea3d1-e8e0-4767-a2b8-ec14315896c3.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/7c7d1e37-646c-44fb-8c6f-6daf283c6f66.jpg",
+        "path2": "Final Dataset/validation/Empty/3afb983d-a3dd-49d8-8465-de08c5b101b7.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/7c932984-9812-4953-aebe-988e5292f583.jpg",
+        "path2": "Final Dataset/validation/Empty/2e927e81-1f4e-4a11-9cd6-2f05adf43dfe.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/850cffca-a043-4983-84d9-d779ae8b2c72.jpg",
+        "path2": "Final Dataset/validation/Empty/03f2b0e3-3305-4db6-90a6-b6b2e882da9a.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/8eeb74da-9d63-4a24-a501-808f346265a5.jpg",
+        "path2": "Final Dataset/validation/Empty/0af4dc9c-59fc-4a10-8e72-8ca8d9b3aef7.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/9483f865-7d4c-43bf-b74a-3e35db248006.jpg",
+        "path2": "Final Dataset/validation/Empty/0ff4c592-9c3c-4e1d-82d3-756ebac50324.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/9483f865-7d4c-43bf-b74a-3e35db248006.jpg",
+        "path2": "Final Dataset/validation/Empty/3b8a2fc6-96f2-448e-97cc-4511189166dd.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/951517bf-30a9-4333-ae6a-cb925220ec75.jpg",
+        "path2": "Final Dataset/validation/Empty/03f2b0e3-3305-4db6-90a6-b6b2e882da9a.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/95ba5c2f-965a-4541-9a95-4ecc289fe774.jpg",
+        "path2": "Final Dataset/validation/Empty/03f2b0e3-3305-4db6-90a6-b6b2e882da9a.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/9ef79061-61e3-420e-bfac-fc5176c9c4a0.jpg",
+        "path2": "Final Dataset/validation/Low/9b6edd6e-0bb1-4a50-8997-ddd3b1c642a1.jpg",
+        "distance": 0,
+        "same_class": false
+      },
+      {
+        "path1": "Final Dataset/training/Empty/a162ecdd-a6b6-4205-8ec9-d872db6901ba.jpg",
+        "path2": "Final Dataset/validation/Empty/0e86d173-334e-4fd2-a0d2-1b124e764ae3.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/a2d54384-98ef-42fe-b17e-9c9d09039080.jpg",
+        "path2": "Final Dataset/validation/Empty/0e52a186-4615-4289-8582-3ed600a5fc10.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/a2d54384-98ef-42fe-b17e-9c9d09039080.jpg",
+        "path2": "Final Dataset/validation/Empty/0e5ea3d1-e8e0-4767-a2b8-ec14315896c3.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/a2d54384-98ef-42fe-b17e-9c9d09039080.jpg",
+        "path2": "Final Dataset/validation/Empty/3afb983d-a3dd-49d8-8465-de08c5b101b7.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/a45c350e-879a-402e-b709-ae2c0d4c74ab.jpg",
+        "path2": "Final Dataset/validation/Empty/0ff4c592-9c3c-4e1d-82d3-756ebac50324.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/a45c350e-879a-402e-b709-ae2c0d4c74ab.jpg",
+        "path2": "Final Dataset/validation/Empty/3b8a2fc6-96f2-448e-97cc-4511189166dd.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/ac6a4e28-a7f8-4870-8996-60c974ca0bb4.jpg",
+        "path2": "Final Dataset/validation/Empty/2fc4e653-21b1-4097-8faa-2172d90a4d21.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/b0b049e2-21f1-497d-b2be-968ec1364369.jpg",
+        "path2": "Final Dataset/validation/Empty/03f2b0e3-3305-4db6-90a6-b6b2e882da9a.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/b169da42-9fa9-4898-bfe1-6d2d8150c7d0.jpg",
+        "path2": "Final Dataset/validation/Empty/3fd2bbf6-142d-43d6-9264-ff91abbad151.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/b73ee664-2cb6-4f04-bd17-436e092c86cf.jpg",
+        "path2": "Final Dataset/validation/Empty/1a705277-0ab0-42b7-9e45-b0fc2be08c8d.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/b8e7d419-97f0-492d-a153-03848de3a6f6.jpg",
+        "path2": "Final Dataset/validation/Empty/0b63dba6-17d1-4f79-bf2b-a954dfc307a8.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/b96f591a-b241-4fe3-b8d5-75d08039019b.jpg",
+        "path2": "Final Dataset/validation/Empty/2c6e6d21-55e0-44d0-a13b-5a06c84bdd0d.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/bac25972-0070-4fe9-b55d-eb6b561671a6.jpg",
+        "path2": "Final Dataset/validation/Empty/3b5c728f-d57f-4e99-b5e5-53d0d2a6274e.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/bd188cf3-0574-49cc-9b57-b7aa7077ac48.jpg",
+        "path2": "Final Dataset/validation/Empty/03f2b0e3-3305-4db6-90a6-b6b2e882da9a.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/bee99a49-f579-45f7-b844-773e27af7def.jpg",
+        "path2": "Final Dataset/validation/Empty/3d10261c-5bff-4c16-ae55-81d0d517be02.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/bff15471-131c-419f-aef9-af15bf412c77.jpg",
+        "path2": "Final Dataset/validation/Empty/2c6e6d21-55e0-44d0-a13b-5a06c84bdd0d.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/c1747c1e-8ce0-4276-abf0-ce41d24d6831.jpg",
+        "path2": "Final Dataset/validation/Empty/03f2b0e3-3305-4db6-90a6-b6b2e882da9a.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/c3b48d0c-fb5d-42df-995e-488995982636.jpg",
+        "path2": "Final Dataset/validation/Empty/0b63dba6-17d1-4f79-bf2b-a954dfc307a8.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/cc82d9aa-adfb-423c-b46d-984239ae8c30.jpg",
+        "path2": "Final Dataset/validation/Empty/03f2b0e3-3305-4db6-90a6-b6b2e882da9a.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/ccb86349-ed2f-451e-8d22-c38b38b01b1b.jpg",
+        "path2": "Final Dataset/validation/Empty/1a705277-0ab0-42b7-9e45-b0fc2be08c8d.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/d063204c-2453-43cd-a3a8-6f131b687878.jpg",
+        "path2": "Final Dataset/validation/Empty/03f2b0e3-3305-4db6-90a6-b6b2e882da9a.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/d6d7c13e-274e-4552-b53c-1d39dc28976e.jpg",
+        "path2": "Final Dataset/validation/Empty/0cdd34a7-d5fe-4975-92c4-3deb8ca7da04.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/db2cd7b1-0942-4252-96cd-1d6f17acf719.jpg",
+        "path2": "Final Dataset/validation/Empty/1d88705e-03bc-4b1e-8b9b-c2930f28debd.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/db62ddf4-94bd-4d48-bc9c-8f6f01055c0e.jpg",
+        "path2": "Final Dataset/validation/Empty/03f2b0e3-3305-4db6-90a6-b6b2e882da9a.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/dd7e9729-a196-4672-8484-26ea60ed5b3f.jpg",
+        "path2": "Final Dataset/validation/Empty/4c2f5039-a993-4674-8d73-872b5b761e9b.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/df044edb-f613-4518-8aed-9dc464c90840.jpg",
+        "path2": "Final Dataset/validation/Empty/2fc4e653-21b1-4097-8faa-2172d90a4d21.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/e04ea657-1e0a-4001-83dc-87fb59a568aa.jpg",
+        "path2": "Final Dataset/validation/Empty/0cf9b53f-ac84-4957-ba14-e777af2892ef.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/e04ea657-1e0a-4001-83dc-87fb59a568aa.jpg",
+        "path2": "Final Dataset/validation/Empty/2c615170-0414-49bb-be4a-659c52f72219.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/e2236cb5-fbd2-42cd-a1fa-5c41514e3827.jpg",
+        "path2": "Final Dataset/validation/Empty/3d10261c-5bff-4c16-ae55-81d0d517be02.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/ecad1f6f-c541-4fbf-b0be-41f4a914b86f.jpg",
+        "path2": "Final Dataset/validation/Empty/1dae1f80-c9d6-48a2-bb09-f182b66b3f5e.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/f22e051b-0718-4daf-9e62-48c59fa26736.jpg",
+        "path2": "Final Dataset/validation/Empty/2cbe806f-5d6e-48a8-b6f4-233beebb2f90.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/fc310f45-8109-44be-978e-d969ea051c10.jpg",
+        "path2": "Final Dataset/validation/Empty/1a705277-0ab0-42b7-9e45-b0fc2be08c8d.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Empty/fc8d30cd-4522-49ec-85bf-164f91bc33ca.jpg",
+        "path2": "Final Dataset/validation/Low/6ca0ac4b-ff33-40a9-9454-5b8173249bb3.jpg",
+        "distance": 0,
+        "same_class": false
+      },
+      {
+        "path1": "Final Dataset/training/Low/18fddd59-b709-49bc-ab71-9443456dcf14.jpg",
+        "path2": "Final Dataset/validation/Low/ac0aafba-196b-43b9-9dbd-f837903408b9.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Low/30046b3c-ab7c-404b-8c7d-51f2618eb4a1.jpg",
+        "path2": "Final Dataset/validation/Low/2f6b6036-f084-4e2c-bde9-8997af29f63f.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Low/e64aaba2-2eaa-42dd-a47d-82962d77ab6e.jpg",
+        "path2": "Final Dataset/validation/Low/6ca0ac4b-ff33-40a9-9454-5b8173249bb3.jpg",
+        "distance": 0,
+        "same_class": true
+      },
+      {
+        "path1": "Final Dataset/training/Medium/58063234-5fc8-4019-bceb-b1b46a8808d2.jpg",
+        "path2": "Final Dataset/validation/Low/1dc9237c-24a0-4a50-a526-f36f4b3d6ef1.jpg",
+        "distance": 0,
+        "same_class": false
+      },
+      {
+        "path1": "Final Dataset/training/Medium/a2e03060-f01b-4f56-a07d-cbbf6ca93a5d.jpg",
+        "path2": "Final Dataset/validation/Low/1dc9237c-24a0-4a50-a526-f36f4b3d6ef1.jpg",
+        "distance": 0,
+        "same_class": false
+      }
+    ]
+  },
+  "duplicate_filenames": {
+    "0a7b874b-20dd-4ab2-b2ed-89645e4c20bc.jpg": [
+      "Final Dataset/testing/Empty/0a7b874b-20dd-4ab2-b2ed-89645e4c20bc.jpg",
+      "Final Dataset/validation/Empty/0a7b874b-20dd-4ab2-b2ed-89645e4c20bc.jpg"
+    ],
+    "0aad5c2c-a166-416a-9d6d-3e5da232a5ae.jpg": [
+      "Final Dataset/testing/Empty/0aad5c2c-a166-416a-9d6d-3e5da232a5ae.jpg",
+      "Final Dataset/validation/Empty/0aad5c2c-a166-416a-9d6d-3e5da232a5ae.jpg"
+    ],
+    "0ce1d078-fcbf-41cb-8124-753740253d58.jpg": [
+      "Final Dataset/testing/Empty/0ce1d078-fcbf-41cb-8124-753740253d58.jpg",
+      "Final Dataset/validation/Empty/0ce1d078-fcbf-41cb-8124-753740253d58.jpg"
+    ],
+    "0f4d7f99-3247-458d-9866-50d21d99eafe.jpg": [
+      "Final Dataset/testing/Empty/0f4d7f99-3247-458d-9866-50d21d99eafe.jpg",
+      "Final Dataset/validation/Empty/0f4d7f99-3247-458d-9866-50d21d99eafe.jpg"
+    ],
+    "1bd184e9-2b48-4aa7-a352-81c46b522ed5.jpg": [
+      "Final Dataset/testing/Empty/1bd184e9-2b48-4aa7-a352-81c46b522ed5.jpg",
+      "Final Dataset/validation/Empty/1bd184e9-2b48-4aa7-a352-81c46b522ed5.jpg"
+    ],
+    "1c37fc9a-6910-4711-89bf-4324b75a7e84.jpg": [
+      "Final Dataset/testing/Empty/1c37fc9a-6910-4711-89bf-4324b75a7e84.jpg",
+      "Final Dataset/validation/Empty/1c37fc9a-6910-4711-89bf-4324b75a7e84.jpg"
+    ],
+    "3a06d0a8-6c78-4964-8a85-34495064fcd4.jpg": [
+      "Final Dataset/testing/Empty/3a06d0a8-6c78-4964-8a85-34495064fcd4.jpg",
+      "Final Dataset/validation/Empty/3a06d0a8-6c78-4964-8a85-34495064fcd4.jpg"
+    ],
+    "3afb983d-a3dd-49d8-8465-de08c5b101b7.jpg": [
+      "Final Dataset/testing/Empty/3afb983d-a3dd-49d8-8465-de08c5b101b7.jpg",
+      "Final Dataset/validation/Empty/3afb983d-a3dd-49d8-8465-de08c5b101b7.jpg"
+    ],
+    "3b3c7b48-feec-4cf4-a51b-5300bed54fbb.jpg": [
+      "Final Dataset/testing/Empty/3b3c7b48-feec-4cf4-a51b-5300bed54fbb.jpg",
+      "Final Dataset/validation/Empty/3b3c7b48-feec-4cf4-a51b-5300bed54fbb.jpg"
+    ],
+    "3c98e03b-59f9-4f34-9be7-ea346838cd79.jpg": [
+      "Final Dataset/testing/Empty/3c98e03b-59f9-4f34-9be7-ea346838cd79.jpg",
+      "Final Dataset/training/Empty/3c98e03b-59f9-4f34-9be7-ea346838cd79.jpg"
+    ],
+    "0285b1e6-5a2e-4703-a4c7-64f4eefc6f60.jpg": [
+      "Final Dataset/testing/High/0285b1e6-5a2e-4703-a4c7-64f4eefc6f60.jpg",
+      "Final Dataset/training/Medium/0285b1e6-5a2e-4703-a4c7-64f4eefc6f60.jpg"
+    ],
+    "1135d510-e633-4144-9c75-191bbcdbf8ad.jpg": [
+      "Final Dataset/testing/High/1135d510-e633-4144-9c75-191bbcdbf8ad.jpg",
+      "Final Dataset/training/High/1135d510-e633-4144-9c75-191bbcdbf8ad.jpg"
+    ],
+    "25ed1e81-0a94-4914-bb38-4cfe78a6b03f.jpg": [
+      "Final Dataset/testing/High/25ed1e81-0a94-4914-bb38-4cfe78a6b03f.jpg",
+      "Final Dataset/training/High/25ed1e81-0a94-4914-bb38-4cfe78a6b03f.jpg"
+    ],
+    "2d489551-00b6-40bf-982b-ad9bda97bb1e.jpg": [
+      "Final Dataset/testing/High/2d489551-00b6-40bf-982b-ad9bda97bb1e.jpg",
+      "Final Dataset/validation/High/2d489551-00b6-40bf-982b-ad9bda97bb1e.jpg"
+    ],
+    "34b96cd2-fad2-4f19-ae1e-cd51af7ed273.jpg": [
+      "Final Dataset/testing/High/34b96cd2-fad2-4f19-ae1e-cd51af7ed273.jpg",
+      "Final Dataset/training/High/34b96cd2-fad2-4f19-ae1e-cd51af7ed273.jpg"
+    ],
+    "5050c989-d986-4cac-a28b-a78e97220ee5.jpg": [
+      "Final Dataset/testing/High/5050c989-d986-4cac-a28b-a78e97220ee5.jpg",
+      "Final Dataset/training/High/5050c989-d986-4cac-a28b-a78e97220ee5.jpg",
+      "Final Dataset/validation/High/5050c989-d986-4cac-a28b-a78e97220ee5.jpg"
+    ],
+    "74f0431c-6463-4da6-8e11-2a5ba3ca2d7d.jpg": [
+      "Final Dataset/testing/High/74f0431c-6463-4da6-8e11-2a5ba3ca2d7d.jpg",
+      "Final Dataset/training/High/74f0431c-6463-4da6-8e11-2a5ba3ca2d7d.jpg"
+    ],
+    "9964ac09-8d1d-493f-97e5-d011ffa4fcd6.jpg": [
+      "Final Dataset/testing/High/9964ac09-8d1d-493f-97e5-d011ffa4fcd6.jpg",
+      "Final Dataset/training/High/9964ac09-8d1d-493f-97e5-d011ffa4fcd6.jpg",
+      "Final Dataset/validation/High/9964ac09-8d1d-493f-97e5-d011ffa4fcd6.jpg"
+    ],
+    "9d8ee333-da7b-4a7c-afe6-8b0522b34ca0.jpg": [
+      "Final Dataset/testing/High/9d8ee333-da7b-4a7c-afe6-8b0522b34ca0.jpg",
+      "Final Dataset/validation/High/9d8ee333-da7b-4a7c-afe6-8b0522b34ca0.jpg"
+    ],
+    "a6a5aa5d-18c6-40dd-9d63-50c42416368f.jpg": [
+      "Final Dataset/testing/High/a6a5aa5d-18c6-40dd-9d63-50c42416368f.jpg",
+      "Final Dataset/training/High/a6a5aa5d-18c6-40dd-9d63-50c42416368f.jpg"
+    ],
+    "c2bc5c60-e2a8-4ef8-800d-37f3dfdadf14.jpg": [
+      "Final Dataset/testing/High/c2bc5c60-e2a8-4ef8-800d-37f3dfdadf14.jpg",
+      "Final Dataset/validation/High/c2bc5c60-e2a8-4ef8-800d-37f3dfdadf14.jpg"
+    ],
+    "c425ced0-e630-4288-b7a2-b3fac71abdc0.jpg": [
+      "Final Dataset/testing/High/c425ced0-e630-4288-b7a2-b3fac71abdc0.jpg",
+      "Final Dataset/training/High/c425ced0-e630-4288-b7a2-b3fac71abdc0.jpg"
+    ],
+    "02d75e04-88ad-4103-94d7-d15bb3f38cca.jpg": [
+      "Final Dataset/testing/Low/02d75e04-88ad-4103-94d7-d15bb3f38cca.jpg",
+      "Final Dataset/training/Low/02d75e04-88ad-4103-94d7-d15bb3f38cca.jpg"
+    ],
+    "13f2bdda-e206-4827-b2f4-c5b6fe079df6.jpg": [
+      "Final Dataset/testing/Low/13f2bdda-e206-4827-b2f4-c5b6fe079df6.jpg",
+      "Final Dataset/training/Low/13f2bdda-e206-4827-b2f4-c5b6fe079df6.jpg"
+    ],
+    "14aecfe9-3114-449f-806f-f581c7ff37fe.jpg": [
+      "Final Dataset/testing/Low/14aecfe9-3114-449f-806f-f581c7ff37fe.jpg",
+      "Final Dataset/training/Low/14aecfe9-3114-449f-806f-f581c7ff37fe.jpg"
+    ],
+    "1ae759ab-7e37-4cff-83b4-53b32c16f764.jpg": [
+      "Final Dataset/testing/Low/1ae759ab-7e37-4cff-83b4-53b32c16f764.jpg",
+      "Final Dataset/validation/Low/1ae759ab-7e37-4cff-83b4-53b32c16f764.jpg"
+    ],
+    "1b839de8-4b43-4708-aaa3-25303815b5a9.jpg": [
+      "Final Dataset/testing/Low/1b839de8-4b43-4708-aaa3-25303815b5a9.jpg",
+      "Final Dataset/validation/Low/1b839de8-4b43-4708-aaa3-25303815b5a9.jpg"
+    ],
+    "1b936f4f-f539-496c-b2c6-a0cce0b2e0d0.jpg": [
+      "Final Dataset/testing/Low/1b936f4f-f539-496c-b2c6-a0cce0b2e0d0.jpg",
+      "Final Dataset/validation/Low/1b936f4f-f539-496c-b2c6-a0cce0b2e0d0.jpg"
+    ],
+    "1c4c9e7c-2af5-42d2-b0b7-2716020fc69e.jpg": [
+      "Final Dataset/testing/Low/1c4c9e7c-2af5-42d2-b0b7-2716020fc69e.jpg",
+      "Final Dataset/training/Low/1c4c9e7c-2af5-42d2-b0b7-2716020fc69e.jpg"
+    ],
+    "1c665d53-01f1-468a-ae73-7cd3e17ec3f5.jpg": [
+      "Final Dataset/testing/Low/1c665d53-01f1-468a-ae73-7cd3e17ec3f5.jpg",
+      "Final Dataset/training/Low/1c665d53-01f1-468a-ae73-7cd3e17ec3f5.jpg"
+    ],
+    "1dc9237c-24a0-4a50-a526-f36f4b3d6ef1.jpg": [
+      "Final Dataset/testing/Low/1dc9237c-24a0-4a50-a526-f36f4b3d6ef1.jpg",
+      "Final Dataset/validation/Low/1dc9237c-24a0-4a50-a526-f36f4b3d6ef1.jpg"
+    ],
+    "24f9eda6-dc79-4625-9c25-30dfa4ca9ff4.jpg": [
+      "Final Dataset/testing/Low/24f9eda6-dc79-4625-9c25-30dfa4ca9ff4.jpg",
+      "Final Dataset/training/Low/24f9eda6-dc79-4625-9c25-30dfa4ca9ff4.jpg"
+    ],
+    "49e138c8-9cc9-428b-951e-ba467d3f4f7d.jpg": [
+      "Final Dataset/testing/Low/49e138c8-9cc9-428b-951e-ba467d3f4f7d.jpg",
+      "Final Dataset/training/Medium/49e138c8-9cc9-428b-951e-ba467d3f4f7d.jpg"
+    ],
+    "49f53144-0a59-4411-9634-b52b1e6124fc.jpg": [
+      "Final Dataset/testing/Low/49f53144-0a59-4411-9634-b52b1e6124fc.jpg",
+      "Final Dataset/training/Low/49f53144-0a59-4411-9634-b52b1e6124fc.jpg"
+    ],
+    "7b2f7063-91f3-43b4-b2ea-96d8bef88468.jpg": [
+      "Final Dataset/testing/Low/7b2f7063-91f3-43b4-b2ea-96d8bef88468.jpg",
+      "Final Dataset/training/Low/7b2f7063-91f3-43b4-b2ea-96d8bef88468.jpg"
+    ],
+    "7ed22748-c098-4d52-bebf-1517b92afa5b.jpg": [
+      "Final Dataset/testing/Low/7ed22748-c098-4d52-bebf-1517b92afa5b.jpg",
+      "Final Dataset/training/Low/7ed22748-c098-4d52-bebf-1517b92afa5b.jpg"
+    ],
+    "7f288ca3-3ca1-44ee-85f0-6b9191bba412.jpg": [
+      "Final Dataset/testing/Low/7f288ca3-3ca1-44ee-85f0-6b9191bba412.jpg",
+      "Final Dataset/training/Low/7f288ca3-3ca1-44ee-85f0-6b9191bba412.jpg"
+    ],
+    "8dce8fcd-2a69-4baf-b885-2c281c2befaf.jpg": [
+      "Final Dataset/testing/Low/8dce8fcd-2a69-4baf-b885-2c281c2befaf.jpg",
+      "Final Dataset/validation/Low/8dce8fcd-2a69-4baf-b885-2c281c2befaf.jpg"
+    ],
+    "8e649a4e-1d41-461d-94d5-a89e7fea9eef.jpg": [
+      "Final Dataset/testing/Low/8e649a4e-1d41-461d-94d5-a89e7fea9eef.jpg",
+      "Final Dataset/validation/Low/8e649a4e-1d41-461d-94d5-a89e7fea9eef.jpg"
+    ],
+    "9b041343-9721-4560-88af-06bcbef5f728.jpg": [
+      "Final Dataset/testing/Low/9b041343-9721-4560-88af-06bcbef5f728.jpg",
+      "Final Dataset/training/Low/9b041343-9721-4560-88af-06bcbef5f728.jpg"
+    ],
+    "9b6d89af-3e21-4f8d-9f19-53c7c4360f97.jpg": [
+      "Final Dataset/testing/Low/9b6d89af-3e21-4f8d-9f19-53c7c4360f97.jpg",
+      "Final Dataset/training/Low/9b6d89af-3e21-4f8d-9f19-53c7c4360f97.jpg"
+    ],
+    "9f2a9917-6d01-4cf1-97c4-11cb9c91b213.jpg": [
+      "Final Dataset/testing/Low/9f2a9917-6d01-4cf1-97c4-11cb9c91b213.jpg",
+      "Final Dataset/training/Low/9f2a9917-6d01-4cf1-97c4-11cb9c91b213.jpg"
+    ],
+    "1a0b5361-a2f7-4679-92b9-0f18608d3481.jpg": [
+      "Final Dataset/testing/Medium/1a0b5361-a2f7-4679-92b9-0f18608d3481.jpg",
+      "Final Dataset/validation/Medium/1a0b5361-a2f7-4679-92b9-0f18608d3481.jpg"
+    ],
+    "1d5afdcb-b436-4f1b-8625-2092b9d85799.jpg": [
+      "Final Dataset/testing/Medium/1d5afdcb-b436-4f1b-8625-2092b9d85799.jpg",
+      "Final Dataset/validation/Medium/1d5afdcb-b436-4f1b-8625-2092b9d85799.jpg"
+    ],
+    "3dc9f3ef-d37d-4221-a64e-0a9a329f85ca.jpg": [
+      "Final Dataset/testing/Medium/3dc9f3ef-d37d-4221-a64e-0a9a329f85ca.jpg",
+      "Final Dataset/training/Medium/3dc9f3ef-d37d-4221-a64e-0a9a329f85ca.jpg"
+    ],
+    "45d90a97-ce4b-4a3c-bdc4-cf84ad4cedaa.jpg": [
+      "Final Dataset/testing/Medium/45d90a97-ce4b-4a3c-bdc4-cf84ad4cedaa.jpg",
+      "Final Dataset/training/Medium/45d90a97-ce4b-4a3c-bdc4-cf84ad4cedaa.jpg"
+    ],
+    "4ee4826d-d12a-4665-a644-807ed1e8f955.jpg": [
+      "Final Dataset/testing/Medium/4ee4826d-d12a-4665-a644-807ed1e8f955.jpg",
+      "Final Dataset/validation/Medium/4ee4826d-d12a-4665-a644-807ed1e8f955.jpg"
+    ],
+    "50f0e0bc-df24-4419-9b09-d61191d11eb0.jpg": [
+      "Final Dataset/testing/Medium/50f0e0bc-df24-4419-9b09-d61191d11eb0.jpg",
+      "Final Dataset/training/Medium/50f0e0bc-df24-4419-9b09-d61191d11eb0.jpg"
+    ],
+    "54f8ac4c-6828-4390-8cbf-3600b228c58c.jpg": [
+      "Final Dataset/testing/Medium/54f8ac4c-6828-4390-8cbf-3600b228c58c.jpg",
+      "Final Dataset/training/Medium/54f8ac4c-6828-4390-8cbf-3600b228c58c.jpg"
+    ],
+    "60a6e195-9a82-4c5b-b212-40d6c7ef4aac.jpg": [
+      "Final Dataset/testing/Medium/60a6e195-9a82-4c5b-b212-40d6c7ef4aac.jpg",
+      "Final Dataset/training/Medium/60a6e195-9a82-4c5b-b212-40d6c7ef4aac.jpg"
+    ],
+    "66cc2e28-5bae-4512-8857-6ffab7aab65c.jpg": [
+      "Final Dataset/testing/Medium/66cc2e28-5bae-4512-8857-6ffab7aab65c.jpg",
+      "Final Dataset/training/Medium/66cc2e28-5bae-4512-8857-6ffab7aab65c.jpg"
+    ],
+    "68c7e7d5-7404-42c4-b95d-7c532dca709f.jpg": [
+      "Final Dataset/testing/Medium/68c7e7d5-7404-42c4-b95d-7c532dca709f.jpg",
+      "Final Dataset/training/Medium/68c7e7d5-7404-42c4-b95d-7c532dca709f.jpg"
+    ],
+    "6bf826f5-cff1-44c6-8dcc-01fe84952523.jpg": [
+      "Final Dataset/testing/Medium/6bf826f5-cff1-44c6-8dcc-01fe84952523.jpg",
+      "Final Dataset/training/Medium/6bf826f5-cff1-44c6-8dcc-01fe84952523.jpg"
+    ],
+    "82f53d99-0628-411b-aac0-f8d1473a2c41.jpg": [
+      "Final Dataset/testing/Medium/82f53d99-0628-411b-aac0-f8d1473a2c41.jpg",
+      "Final Dataset/training/Medium/82f53d99-0628-411b-aac0-f8d1473a2c41.jpg"
+    ],
+    "b67cae19-1b8f-4fe2-af58-b5d466bad78e.jpg": [
+      "Final Dataset/testing/Medium/b67cae19-1b8f-4fe2-af58-b5d466bad78e.jpg",
+      "Final Dataset/training/Medium/b67cae19-1b8f-4fe2-af58-b5d466bad78e.jpg"
+    ],
+    "d7c81ff3-3f60-4422-b925-66d7c200e342.jpg": [
+      "Final Dataset/testing/Medium/d7c81ff3-3f60-4422-b925-66d7c200e342.jpg",
+      "Final Dataset/training/Medium/d7c81ff3-3f60-4422-b925-66d7c200e342.jpg"
+    ],
+    "2ed274cf-4d75-4057-94d1-3f1fc4b73f0c.jpg": [
+      "Final Dataset/testing/Traffic Jam/2ed274cf-4d75-4057-94d1-3f1fc4b73f0c.jpg",
+      "Final Dataset/validation/Medium/2ed274cf-4d75-4057-94d1-3f1fc4b73f0c.jpg"
+    ],
+    "3F12BCA8-1CC1-4726-AF44-3F117A542B9F_cx0_cy9_cw0_w1200_r1.jpg": [
+      "Final Dataset/testing/Traffic Jam/3F12BCA8-1CC1-4726-AF44-3F117A542B9F_cx0_cy9_cw0_w1200_r1.jpg",
+      "Final Dataset/training/Traffic Jam/3F12BCA8-1CC1-4726-AF44-3F117A542B9F_cx0_cy9_cw0_w1200_r1.jpg"
+    ],
+    "4a471c2d-cf88-4618-9449-d069a30b62fc (2).jpg": [
+      "Final Dataset/testing/Traffic Jam/4a471c2d-cf88-4618-9449-d069a30b62fc (2).jpg",
+      "Final Dataset/training/Traffic Jam/4a471c2d-cf88-4618-9449-d069a30b62fc (2).jpg"
+    ],
+    "4baf7c22-e9bf-45cf-8e4c-da2aca5d8a67.jpg": [
+      "Final Dataset/testing/Traffic Jam/4baf7c22-e9bf-45cf-8e4c-da2aca5d8a67.jpg",
+      "Final Dataset/training/Traffic Jam/4baf7c22-e9bf-45cf-8e4c-da2aca5d8a67.jpg"
+    ],
+    "5c076bc3-7387-46ed-a04b-5fd4cab4c2f4.jpg": [
+      "Final Dataset/testing/Traffic Jam/5c076bc3-7387-46ed-a04b-5fd4cab4c2f4.jpg",
+      "Final Dataset/training/Traffic Jam/5c076bc3-7387-46ed-a04b-5fd4cab4c2f4.jpg"
+    ],
+    "6d20025c-1548-4e59-a4c0-160454cc0467.jpg": [
+      "Final Dataset/testing/Traffic Jam/6d20025c-1548-4e59-a4c0-160454cc0467.jpg",
+      "Final Dataset/training/Traffic Jam/6d20025c-1548-4e59-a4c0-160454cc0467.jpg"
+    ],
+    "6ea0e8a3-89c2-4f65-a2b8-5ed1e046d53c.jpg": [
+      "Final Dataset/testing/Traffic Jam/6ea0e8a3-89c2-4f65-a2b8-5ed1e046d53c.jpg",
+      "Final Dataset/training/Traffic Jam/6ea0e8a3-89c2-4f65-a2b8-5ed1e046d53c.jpg"
+    ],
+    "31e930b2-596e-47e5-b33c-4eb46ada89fa.jpg": [
+      "Final Dataset/training/Empty/31e930b2-596e-47e5-b33c-4eb46ada89fa.jpg",
+      "Final Dataset/validation/Empty/31e930b2-596e-47e5-b33c-4eb46ada89fa.jpg"
+    ],
+    "39f0e895-5e8d-4aec-8890-18b30b604164.jpg": [
+      "Final Dataset/training/Empty/39f0e895-5e8d-4aec-8890-18b30b604164.jpg",
+      "Final Dataset/validation/Empty/39f0e895-5e8d-4aec-8890-18b30b604164.jpg"
+    ],
+    "3e56cb1f-4b9a-4d7b-b958-e972516bdf58.jpg": [
+      "Final Dataset/training/Empty/3e56cb1f-4b9a-4d7b-b958-e972516bdf58.jpg",
+      "Final Dataset/validation/Empty/3e56cb1f-4b9a-4d7b-b958-e972516bdf58.jpg"
+    ],
+    "41c61429-753f-425a-861e-31a7a5c4e813.jpg": [
+      "Final Dataset/training/Empty/41c61429-753f-425a-861e-31a7a5c4e813.jpg",
+      "Final Dataset/validation/Empty/41c61429-753f-425a-861e-31a7a5c4e813.jpg"
+    ],
+    "44bf0759-1080-4a6d-ad0f-30e683cdf813.jpg": [
+      "Final Dataset/training/Empty/44bf0759-1080-4a6d-ad0f-30e683cdf813.jpg",
+      "Final Dataset/validation/Empty/44bf0759-1080-4a6d-ad0f-30e683cdf813.jpg"
+    ],
+    "5dba4cf2-47f3-4578-9598-338682ac272b.jpg": [
+      "Final Dataset/training/Empty/5dba4cf2-47f3-4578-9598-338682ac272b.jpg",
+      "Final Dataset/validation/Empty/5dba4cf2-47f3-4578-9598-338682ac272b.jpg"
+    ],
+    "67ee6c06-58a4-4785-9817-cc20e2c4d65a.jpg": [
+      "Final Dataset/training/Empty/67ee6c06-58a4-4785-9817-cc20e2c4d65a.jpg",
+      "Final Dataset/validation/Empty/67ee6c06-58a4-4785-9817-cc20e2c4d65a.jpg"
+    ],
+    "4e62f338-8ad8-4c75-abf5-28a92a614371.jpg": [
+      "Final Dataset/training/High/4e62f338-8ad8-4c75-abf5-28a92a614371.jpg",
+      "Final Dataset/validation/High/4e62f338-8ad8-4c75-abf5-28a92a614371.jpg"
+    ],
+    "b14e8a55-c41e-4a4c-8984-907579b7df2d.jpg": [
+      "Final Dataset/training/High/b14e8a55-c41e-4a4c-8984-907579b7df2d.jpg",
+      "Final Dataset/training/Traffic Jam/b14e8a55-c41e-4a4c-8984-907579b7df2d.jpg"
+    ],
+    "dc9b1d39-10b3-4259-b1aa-c2fbf6862121.jpg": [
+      "Final Dataset/training/High/dc9b1d39-10b3-4259-b1aa-c2fbf6862121.jpg",
+      "Final Dataset/validation/High/dc9b1d39-10b3-4259-b1aa-c2fbf6862121.jpg"
+    ],
+    "dcd3ed0c-b718-49a0-98a8-bc2c700ed1ff.jpg": [
+      "Final Dataset/training/High/dcd3ed0c-b718-49a0-98a8-bc2c700ed1ff.jpg",
+      "Final Dataset/training/Traffic Jam/dcd3ed0c-b718-49a0-98a8-bc2c700ed1ff.jpg"
+    ],
+    "df012625-cf16-4367-b37a-f944fbb62eee.jpg": [
+      "Final Dataset/training/High/df012625-cf16-4367-b37a-f944fbb62eee.jpg",
+      "Final Dataset/validation/High/df012625-cf16-4367-b37a-f944fbb62eee.jpg"
+    ],
+    "e3c2b00d-2596-447c-8da1-44be2bfffbf9.jpg": [
+      "Final Dataset/training/High/e3c2b00d-2596-447c-8da1-44be2bfffbf9.jpg",
+      "Final Dataset/validation/High/e3c2b00d-2596-447c-8da1-44be2bfffbf9.jpg"
+    ],
+    "e5d3fa3f-8848-4592-a123-bfb66dfefc25.jpg": [
+      "Final Dataset/training/High/e5d3fa3f-8848-4592-a123-bfb66dfefc25.jpg",
+      "Final Dataset/validation/High/e5d3fa3f-8848-4592-a123-bfb66dfefc25.jpg"
+    ],
+    "ecdb16c5-1fe5-456e-9dfb-5d4c20d1abf4.jpg": [
+      "Final Dataset/training/High/ecdb16c5-1fe5-456e-9dfb-5d4c20d1abf4.jpg",
+      "Final Dataset/validation/High/ecdb16c5-1fe5-456e-9dfb-5d4c20d1abf4.jpg"
+    ],
+    "064caee1-56e9-4583-bf2e-ef5dbc811a11.jpg": [
+      "Final Dataset/training/Low/064caee1-56e9-4583-bf2e-ef5dbc811a11.jpg",
+      "Final Dataset/validation/Low/064caee1-56e9-4583-bf2e-ef5dbc811a11.jpg"
+    ],
+    "58ca2b23-3b07-4b4a-b8cd-d3f608fcdb3f.jpg": [
+      "Final Dataset/training/Low/58ca2b23-3b07-4b4a-b8cd-d3f608fcdb3f.jpg",
+      "Final Dataset/validation/Low/58ca2b23-3b07-4b4a-b8cd-d3f608fcdb3f.jpg"
+    ],
+    "58e47ea1-278b-43f6-a1f9-31f2be0c8681.jpg": [
+      "Final Dataset/training/Low/58e47ea1-278b-43f6-a1f9-31f2be0c8681.jpg",
+      "Final Dataset/validation/Low/58e47ea1-278b-43f6-a1f9-31f2be0c8681.jpg"
+    ],
+    "62dd2f85-a200-4eb8-880d-7942389c6084.jpg": [
+      "Final Dataset/training/Low/62dd2f85-a200-4eb8-880d-7942389c6084.jpg",
+      "Final Dataset/validation/Low/62dd2f85-a200-4eb8-880d-7942389c6084.jpg"
+    ],
+    "6ae37c12-477a-4c52-9913-273d444db4a3.jpg": [
+      "Final Dataset/training/Low/6ae37c12-477a-4c52-9913-273d444db4a3.jpg",
+      "Final Dataset/validation/Low/6ae37c12-477a-4c52-9913-273d444db4a3.jpg"
+    ],
+    "aa61f384-d4a9-426a-ab83-ca1130fcaed6.jpg": [
+      "Final Dataset/training/Low/aa61f384-d4a9-426a-ab83-ca1130fcaed6.jpg",
+      "Final Dataset/validation/Low/aa61f384-d4a9-426a-ab83-ca1130fcaed6.jpg"
+    ],
+    "ab5a62bf-d34f-46ef-a6fa-43fab9e25893.jpg": [
+      "Final Dataset/training/Low/ab5a62bf-d34f-46ef-a6fa-43fab9e25893.jpg",
+      "Final Dataset/validation/Low/ab5a62bf-d34f-46ef-a6fa-43fab9e25893.jpg"
+    ],
+    "abfb4b69-5cef-4fcf-9d07-c6726558502c.jpg": [
+      "Final Dataset/training/Low/abfb4b69-5cef-4fcf-9d07-c6726558502c.jpg",
+      "Final Dataset/validation/Low/abfb4b69-5cef-4fcf-9d07-c6726558502c.jpg"
+    ],
+    "ac0aafba-196b-43b9-9dbd-f837903408b9.jpg": [
+      "Final Dataset/training/Low/ac0aafba-196b-43b9-9dbd-f837903408b9.jpg",
+      "Final Dataset/validation/Low/ac0aafba-196b-43b9-9dbd-f837903408b9.jpg"
+    ],
+    "acc84560-6c01-4d01-ba06-ea8fafe5dfc3.jpg": [
+      "Final Dataset/training/Low/acc84560-6c01-4d01-ba06-ea8fafe5dfc3.jpg",
+      "Final Dataset/validation/Low/acc84560-6c01-4d01-ba06-ea8fafe5dfc3.jpg"
+    ],
+    "ad10b96f-a915-4f57-84d8-70199326b1e4.jpg": [
+      "Final Dataset/training/Low/ad10b96f-a915-4f57-84d8-70199326b1e4.jpg",
+      "Final Dataset/validation/Low/ad10b96f-a915-4f57-84d8-70199326b1e4.jpg"
+    ],
+    "b1981f71-d58d-4574-a51f-994d0ad962c2.jpg": [
+      "Final Dataset/training/Low/b1981f71-d58d-4574-a51f-994d0ad962c2.jpg",
+      "Final Dataset/validation/Low/b1981f71-d58d-4574-a51f-994d0ad962c2.jpg"
+    ],
+    "bb3a3eef-4d10-46f2-9cc9-c2b60abb7769.jpg": [
+      "Final Dataset/training/Low/bb3a3eef-4d10-46f2-9cc9-c2b60abb7769.jpg",
+      "Final Dataset/validation/Low/bb3a3eef-4d10-46f2-9cc9-c2b60abb7769.jpg"
+    ],
+    "ef969416-9652-4867-a0f1-8c75b09e887f.jpg": [
+      "Final Dataset/training/Low/ef969416-9652-4867-a0f1-8c75b09e887f.jpg",
+      "Final Dataset/training/Medium/ef969416-9652-4867-a0f1-8c75b09e887f.jpg"
+    ],
+    "069199b3-88d6-49b7-a819-4b46eed49d02.jpg": [
+      "Final Dataset/training/Medium/069199b3-88d6-49b7-a819-4b46eed49d02.jpg",
+      "Final Dataset/validation/Medium/069199b3-88d6-49b7-a819-4b46eed49d02.jpg"
+    ],
+    "1839cc7e-d896-49f3-95a9-851946a62cb2.jpg": [
+      "Final Dataset/training/Medium/1839cc7e-d896-49f3-95a9-851946a62cb2.jpg",
+      "Final Dataset/validation/Medium/1839cc7e-d896-49f3-95a9-851946a62cb2.jpg"
+    ],
+    "1e946cc1-9165-4122-a339-8d4941090236.jpg": [
+      "Final Dataset/training/Medium/1e946cc1-9165-4122-a339-8d4941090236.jpg",
+      "Final Dataset/validation/Medium/1e946cc1-9165-4122-a339-8d4941090236.jpg"
+    ],
+    "2252cc59-3ad3-4088-9d05-c2a32eba5245.jpg": [
+      "Final Dataset/training/Medium/2252cc59-3ad3-4088-9d05-c2a32eba5245.jpg",
+      "Final Dataset/validation/Medium/2252cc59-3ad3-4088-9d05-c2a32eba5245.jpg"
+    ],
+    "342325d4-cd33-4a82-8bba-ed9a8bb4165b.jpg": [
+      "Final Dataset/training/Medium/342325d4-cd33-4a82-8bba-ed9a8bb4165b.jpg",
+      "Final Dataset/validation/Medium/342325d4-cd33-4a82-8bba-ed9a8bb4165b.jpg"
+    ],
+    "5045b0ac-c832-48a7-aaa7-dd4f990d47ef.jpg": [
+      "Final Dataset/training/Medium/5045b0ac-c832-48a7-aaa7-dd4f990d47ef.jpg",
+      "Final Dataset/validation/Medium/5045b0ac-c832-48a7-aaa7-dd4f990d47ef.jpg"
+    ],
+    "548328da-e975-4f11-96ae-c9f3659bee9e.jpg": [
+      "Final Dataset/training/Medium/548328da-e975-4f11-96ae-c9f3659bee9e.jpg",
+      "Final Dataset/validation/Medium/548328da-e975-4f11-96ae-c9f3659bee9e.jpg"
+    ],
+    "7474b100-cc5d-47fe-9c17-22df4d2bea48.jpg": [
+      "Final Dataset/training/Medium/7474b100-cc5d-47fe-9c17-22df4d2bea48.jpg",
+      "Final Dataset/validation/Medium/7474b100-cc5d-47fe-9c17-22df4d2bea48.jpg"
+    ],
+    "78161cee-486c-457d-9525-24295bee87b4.jpg": [
+      "Final Dataset/training/Medium/78161cee-486c-457d-9525-24295bee87b4.jpg",
+      "Final Dataset/validation/Medium/78161cee-486c-457d-9525-24295bee87b4.jpg"
+    ],
+    "879c9912-05c4-4e5f-a851-7dad51ddd714.jpg": [
+      "Final Dataset/training/Medium/879c9912-05c4-4e5f-a851-7dad51ddd714.jpg",
+      "Final Dataset/validation/Medium/879c9912-05c4-4e5f-a851-7dad51ddd714.jpg"
+    ],
+    "8a25380d-9f2e-4139-9844-f7802a61faa2.jpg": [
+      "Final Dataset/training/Medium/8a25380d-9f2e-4139-9844-f7802a61faa2.jpg",
+      "Final Dataset/validation/Medium/8a25380d-9f2e-4139-9844-f7802a61faa2.jpg"
+    ],
+    "e4f0bb0b-4150-4f87-ae9d-5c18e8ea605e.jpg": [
+      "Final Dataset/training/Traffic Jam/e4f0bb0b-4150-4f87-ae9d-5c18e8ea605e.jpg",
+      "Final Dataset/validation/Traffic Jam/e4f0bb0b-4150-4f87-ae9d-5c18e8ea605e.jpg"
+    ],
+    "image16.jpeg": [
+      "Final Dataset/training/Traffic Jam/image16.jpeg",
+      "Final Dataset/validation/Traffic Jam/image16.jpeg"
+    ],
+    "images74.jpg": [
+      "Final Dataset/training/Traffic Jam/images74.jpg",
+      "Final Dataset/validation/Traffic Jam/images74.jpg"
+    ]
+  },
+  "filename_metadata": {
+    "uuid_v4_like": 3901,
+    "files_total": 4038,
+    "files_with_exif": 7
+  },
+  "contact_sheet": "dataset_contact_sheet.jpg"
+}
