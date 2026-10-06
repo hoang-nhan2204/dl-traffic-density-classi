@@ -4,6 +4,7 @@ __pycache__/
 outputs/
 data/manifests/*.csv
 traffic.zip
+/Final Dataset/
 dataset_contact_sheet*.jpg
 *.pt
 /home/honganh/Documents/tempt/dl-traffic-density-classi/traffic.zip

@@ -19,23 +19,5 @@ uv pip install --python .venv/bin/python --torch-backend=cu128 -r requirements.t
 
 Lệnh tạo `data/manifests/{train,val,test}.csv`, dùng seed 42, split xấp xỉ 70/15/15, khử duplicate exact và group theo candidate dHash. Không thay đổi ZIP gốc.
 
-## Huấn luyện
-
-```bash
-.venv/bin/python scripts/train.py --model complex --aug A1 --loss weighted --seed 42 --epochs 40
-bash scripts/run_all.sh
-```
-
-`run_all.sh` chạy screening A0/A1/A2, CE/weighted CE, sau đó ba seed cho mỗi kiến trúc. Kết quả của mỗi run là `outputs/<model>_<aug>_<loss>_<seed>/`, bao gồm `best.pt`, `metrics.json`, `history.json`, `predictions.csv`.
-
-## Tổng hợp
-
-```bash
-.venv/bin/python scripts/summarize_results.py
-```
-
-Tạo bảng mean ± std, curve validation và confusion matrix trong `outputs/summary/`. Xem [EXPERIMENT_REPORT.md](EXPERIMENT_REPORT.md) để biết kết quả và giới hạn protocol.
-
-## Thiết kế
-
-Tiền xử lý chung: decode nội dung → RGB → resize-fit giữ tỷ lệ → pad 224×224 → ImageNet normalization. `src/models/nets.py` có ba kiến trúc; `src/dataset.py` đọc trực tiếp từ ZIP. Mã/artefact tái lập dùng đường dẫn tương đối.
+## Chú ý 
+mọi file ở trong folder ref là tài liệu tham khảo, không nằm trong pipeline chạy chính của dự án 
