@@ -1,0 +1,171 @@
+image_path,label,class_name,original_split,reason,representative_path
+Final Dataset/training/High/a6a5aa5d-18c6-40dd-9d63-50c42416368f.jpg,3,High,training,exact_duplicate,Final Dataset/testing/High/a6a5aa5d-18c6-40dd-9d63-50c42416368f.jpg
+Final Dataset/validation/Medium/548328da-e975-4f11-96ae-c9f3659bee9e.jpg,2,Medium,validation,exact_duplicate,Final Dataset/training/Medium/548328da-e975-4f11-96ae-c9f3659bee9e.jpg
+Final Dataset/validation/Low/ac0aafba-196b-43b9-9dbd-f837903408b9.jpg,1,Low,validation,exact_duplicate,Final Dataset/training/Low/ac0aafba-196b-43b9-9dbd-f837903408b9.jpg
+Final Dataset/validation/Low/acc84560-6c01-4d01-ba06-ea8fafe5dfc3.jpg,1,Low,validation,exact_duplicate,Final Dataset/training/Low/acc84560-6c01-4d01-ba06-ea8fafe5dfc3.jpg
+Final Dataset/validation/Low/abfb4b69-5cef-4fcf-9d07-c6726558502c.jpg,1,Low,validation,exact_duplicate,Final Dataset/training/Low/abfb4b69-5cef-4fcf-9d07-c6726558502c.jpg
+Final Dataset/training/High/1135d510-e633-4144-9c75-191bbcdbf8ad.jpg,3,High,training,exact_duplicate,Final Dataset/testing/High/1135d510-e633-4144-9c75-191bbcdbf8ad.jpg
+Final Dataset/training/Low/13f2bdda-e206-4827-b2f4-c5b6fe079df6.jpg,1,Low,training,exact_duplicate,Final Dataset/testing/Low/13f2bdda-e206-4827-b2f4-c5b6fe079df6.jpg
+Final Dataset/testing/Traffic Jam/09535c16-f11f-4c01-b5f3-af7dc56e80b5.jpg,4,Traffic Jam,testing,exact_duplicate,Final Dataset/testing/Traffic Jam/09535c16-f11f-4c01-b5f3-af7dc56e80b5(1).jpg
+Final Dataset/training/Medium/66cc2e28-5bae-4512-8857-6ffab7aab65c.jpg,2,Medium,training,exact_duplicate,Final Dataset/testing/Medium/66cc2e28-5bae-4512-8857-6ffab7aab65c.jpg
+Final Dataset/validation/Traffic Jam/e4f0bb0b-4150-4f87-ae9d-5c18e8ea605e.jpg,4,Traffic Jam,validation,exact_duplicate,Final Dataset/training/Traffic Jam/e4f0bb0b-4150-4f87-ae9d-5c18e8ea605e.jpg
+Final Dataset/training/Empty/061ca1c8-e2e0-4afb-945b-c0203457bbde.jpg,0,Empty,training,exact_duplicate,Final Dataset/training/Empty/013561a0-ab9a-4e08-8286-c7dc85f6ad68.jpg
+Final Dataset/training/Empty/681bfa72-c528-4ba7-9cb8-7b9587743aa4 (1).jpg,0,Empty,training,exact_duplicate,Final Dataset/training/Empty/013561a0-ab9a-4e08-8286-c7dc85f6ad68.jpg
+Final Dataset/training/Empty/681bfa72-c528-4ba7-9cb8-7b9587743aa4.jpg,0,Empty,training,exact_duplicate,Final Dataset/training/Empty/013561a0-ab9a-4e08-8286-c7dc85f6ad68.jpg
+Final Dataset/training/Empty/c48cac87-db50-4340-85ea-eed4dca17619 (1).jpg,0,Empty,training,exact_duplicate,Final Dataset/training/Empty/013561a0-ab9a-4e08-8286-c7dc85f6ad68.jpg
+Final Dataset/training/Empty/c48cac87-db50-4340-85ea-eed4dca17619 (2).jpg,0,Empty,training,exact_duplicate,Final Dataset/training/Empty/013561a0-ab9a-4e08-8286-c7dc85f6ad68.jpg
+Final Dataset/training/Empty/c48cac87-db50-4340-85ea-eed4dca17619.jpg,0,Empty,training,exact_duplicate,Final Dataset/training/Empty/013561a0-ab9a-4e08-8286-c7dc85f6ad68.jpg
+Final Dataset/training/Low/49f53144-0a59-4411-9634-b52b1e6124fc.jpg,1,Low,training,exact_duplicate,Final Dataset/testing/Low/49f53144-0a59-4411-9634-b52b1e6124fc.jpg
+Final Dataset/training/High/34b96cd2-fad2-4f19-ae1e-cd51af7ed273.jpg,3,High,training,exact_duplicate,Final Dataset/testing/High/34b96cd2-fad2-4f19-ae1e-cd51af7ed273.jpg
+Final Dataset/validation/Medium/3dbf85da-9934-42dc-8e09-da37535170fd.jpg,2,Medium,validation,exact_duplicate,Final Dataset/validation/Medium/3dbf85da-9934-42dc-8e09-da37535170fd(1).jpg
+Final Dataset/validation/High/c2bc5c60-e2a8-4ef8-800d-37f3dfdadf14.jpg,3,High,validation,exact_duplicate,Final Dataset/testing/High/c2bc5c60-e2a8-4ef8-800d-37f3dfdadf14.jpg
+Final Dataset/training/Medium/68bc24c9-faeb-4f33-a6ce-8d0c67f428d3.jpg,2,Medium,training,exact_duplicate,Final Dataset/training/Medium/68bc24c9-faeb-4f33-a6ce-8d0c67f428d3(1).jpg
+Final Dataset/training/Medium/54f8ac4c-6828-4390-8cbf-3600b228c58c.jpg,2,Medium,training,exact_duplicate,Final Dataset/testing/Medium/54f8ac4c-6828-4390-8cbf-3600b228c58c.jpg
+Final Dataset/validation/Low/1dc9237c-24a0-4a50-a526-f36f4b3d6ef1.jpg,1,Low,validation,exact_duplicate,Final Dataset/testing/Low/1dc9237c-24a0-4a50-a526-f36f4b3d6ef1.jpg
+Final Dataset/testing/High/7ea7954a-0a9a-48a7-a57a-0fe8054b0063.jpg,3,High,testing,exact_duplicate,Final Dataset/testing/High/7ea7954a-0a9a-48a7-a57a-0fe8054b0063(1).jpg
+Final Dataset/training/Medium/e6acb7e6-e30c-4eb8-95f6-61d5fbdc52ff.jpg,2,Medium,training,exact_duplicate,Final Dataset/training/Medium/e6acb7e6-e30c-4eb8-95f6-61d5fbdc52ff (1).jpg
+Final Dataset/validation/Empty/0f4d7f99-3247-458d-9866-50d21d99eafe.jpg,0,Empty,validation,exact_duplicate,Final Dataset/testing/Empty/0f4d7f99-3247-458d-9866-50d21d99eafe.jpg
+Final Dataset/testing/Low/49e138c8-9cc9-428b-951e-ba467d3f4f7d.jpg,1,Low,testing,conflicting_label,
+Final Dataset/training/Medium/49e138c8-9cc9-428b-951e-ba467d3f4f7d.jpg,2,Medium,training,conflicting_label,
+Final Dataset/validation/Empty/3f4e3b8e-17c8-4630-92fe-9f93b3ceaeb3 (1).jpg,0,Empty,validation,exact_duplicate,Final Dataset/training/Empty/52857e96-4d96-4bd2-924a-35586cf22900 (1).jpg
+Final Dataset/training/Medium/3dc9f3ef-d37d-4221-a64e-0a9a329f85ca.jpg,2,Medium,training,exact_duplicate,Final Dataset/testing/Medium/3dc9f3ef-d37d-4221-a64e-0a9a329f85ca.jpg
+Final Dataset/validation/Low/1b936f4f-f539-496c-b2c6-a0cce0b2e0d0.jpg,1,Low,validation,exact_duplicate,Final Dataset/testing/Low/1b936f4f-f539-496c-b2c6-a0cce0b2e0d0.jpg
+Final Dataset/training/Empty/ef13ab1f-3307-4ccf-b28a-a8fe93200b69.jpg,0,Empty,training,exact_duplicate,Final Dataset/training/Empty/ef13ab1f-3307-4ccf-b28a-a8fe93200b69 (1).jpg
+Final Dataset/training/Empty/8f54967c-c4e5-4612-a668-6ba50f9aad9b - Copy.jpg,0,Empty,training,exact_duplicate,Final Dataset/training/Empty/8f54967c-c4e5-4612-a668-6ba50f9aad9b - Copy (2).jpg
+Final Dataset/training/Empty/8f54967c-c4e5-4612-a668-6ba50f9aad9b.jpg,0,Empty,training,exact_duplicate,Final Dataset/training/Empty/8f54967c-c4e5-4612-a668-6ba50f9aad9b - Copy (2).jpg
+Final Dataset/training/Low/9b6d89af-3e21-4f8d-9f19-53c7c4360f97.jpg,1,Low,training,exact_duplicate,Final Dataset/testing/Low/9b6d89af-3e21-4f8d-9f19-53c7c4360f97.jpg
+Final Dataset/validation/High/e5d3fa3f-8848-4592-a123-bfb66dfefc25.jpg,3,High,validation,exact_duplicate,Final Dataset/training/High/e5d3fa3f-8848-4592-a123-bfb66dfefc25.jpg
+Final Dataset/testing/Traffic Jam/49096b40-7b90-41c7-9713-b4d95ff8b836.jpg,4,Traffic Jam,testing,exact_duplicate,Final Dataset/testing/Traffic Jam/49096b40-7b90-41c7-9713-b4d95ff8b836(1).jpg
+Final Dataset/validation/High/9d8ee333-da7b-4a7c-afe6-8b0522b34ca0.jpg,3,High,validation,exact_duplicate,Final Dataset/testing/High/9d8ee333-da7b-4a7c-afe6-8b0522b34ca0.jpg
+Final Dataset/validation/High/2d489551-00b6-40bf-982b-ad9bda97bb1e.jpg,3,High,validation,exact_duplicate,Final Dataset/testing/High/2d489551-00b6-40bf-982b-ad9bda97bb1e.jpg
+Final Dataset/validation/Empty/3afb983d-a3dd-49d8-8465-de08c5b101b7.jpg,0,Empty,validation,exact_duplicate,Final Dataset/testing/Empty/3afb983d-a3dd-49d8-8465-de08c5b101b7.jpg
+Final Dataset/training/Low/1c665d53-01f1-468a-ae73-7cd3e17ec3f5.jpg,1,Low,training,exact_duplicate,Final Dataset/testing/Low/1c665d53-01f1-468a-ae73-7cd3e17ec3f5.jpg
+Final Dataset/training/Traffic Jam/3F12BCA8-1CC1-4726-AF44-3F117A542B9F_cx0_cy9_cw0_w1200_r1.jpg,4,Traffic Jam,training,exact_duplicate,Final Dataset/testing/Traffic Jam/3F12BCA8-1CC1-4726-AF44-3F117A542B9F_cx0_cy9_cw0_w1200_r1.jpg
+Final Dataset/validation/Empty/67ee6c06-58a4-4785-9817-cc20e2c4d65a.jpg,0,Empty,validation,exact_duplicate,Final Dataset/training/Empty/67ee6c06-58a4-4785-9817-cc20e2c4d65a.jpg
+Final Dataset/training/Empty/2a27b63f-6dd0-4f0e-97da-c928fc0b02d0(2).jpg,0,Empty,training,exact_duplicate,Final Dataset/testing/Empty/2a27b63f-6dd0-4f0e-97da-c928fc0b02d0(1).jpg
+Final Dataset/training/Empty/2a27b63f-6dd0-4f0e-97da-c928fc0b02d0(3).jpg,0,Empty,training,exact_duplicate,Final Dataset/testing/Empty/2a27b63f-6dd0-4f0e-97da-c928fc0b02d0(1).jpg
+Final Dataset/validation/Empty/2a27b63f-6dd0-4f0e-97da-c928fc0b02d0.jpg,0,Empty,validation,exact_duplicate,Final Dataset/testing/Empty/2a27b63f-6dd0-4f0e-97da-c928fc0b02d0(1).jpg
+Final Dataset/training/High/b717e15e-e174-4e37-8fde-762ba6e3f9fd.jpg,3,High,training,exact_duplicate,Final Dataset/training/High/b717e15e-e174-4e37-8fde-762ba6e3f9fd (1).jpg
+Final Dataset/validation/Empty/31e930b2-596e-47e5-b33c-4eb46ada89fa.jpg,0,Empty,validation,exact_duplicate,Final Dataset/training/Empty/31e930b2-596e-47e5-b33c-4eb46ada89fa.jpg
+Final Dataset/validation/Medium/069199b3-88d6-49b7-a819-4b46eed49d02.jpg,2,Medium,validation,exact_duplicate,Final Dataset/training/Medium/069199b3-88d6-49b7-a819-4b46eed49d02.jpg
+Final Dataset/training/Empty/3c98e03b-59f9-4f34-9be7-ea346838cd79.jpg,0,Empty,training,exact_duplicate,Final Dataset/testing/Empty/3c98e03b-59f9-4f34-9be7-ea346838cd79.jpg
+Final Dataset/validation/Medium/8a25380d-9f2e-4139-9844-f7802a61faa2.jpg,2,Medium,validation,exact_duplicate,Final Dataset/training/Medium/8a25380d-9f2e-4139-9844-f7802a61faa2.jpg
+Final Dataset/training/Medium/65f16bb0-8cd3-4b3c-918f-84d8e6f623a7.jpg,2,Medium,training,exact_duplicate,Final Dataset/training/Medium/65f16bb0-8cd3-4b3c-918f-84d8e6f623a7 (1).jpg
+Final Dataset/training/Low/1c4c9e7c-2af5-42d2-b0b7-2716020fc69e.jpg,1,Low,training,exact_duplicate,Final Dataset/testing/Low/1c4c9e7c-2af5-42d2-b0b7-2716020fc69e.jpg
+Final Dataset/testing/High/9bfc0d1b-9e61-410f-880e-cb5282b40b42.jpg,3,High,testing,exact_duplicate,Final Dataset/testing/High/9bfc0d1b-9e61-410f-880e-cb5282b40b42(1).jpg
+Final Dataset/validation/Low/1b839de8-4b43-4708-aaa3-25303815b5a9.jpg,1,Low,validation,exact_duplicate,Final Dataset/testing/Low/1b839de8-4b43-4708-aaa3-25303815b5a9.jpg
+Final Dataset/validation/Low/6ae37c12-477a-4c52-9913-273d444db4a3.jpg,1,Low,validation,exact_duplicate,Final Dataset/training/Low/6ae37c12-477a-4c52-9913-273d444db4a3.jpg
+Final Dataset/training/Empty/159b7b8f-925b-4122-9644-673e1f2358ef.jpg,0,Empty,training,exact_duplicate,Final Dataset/training/Empty/0418a022-0653-4fbe-a2eb-c474c09fa94d.jpg
+Final Dataset/training/Empty/35acd126-8ebc-437b-bb16-b7dac9c38490.jpg,0,Empty,training,exact_duplicate,Final Dataset/training/Empty/0418a022-0653-4fbe-a2eb-c474c09fa94d.jpg
+Final Dataset/training/Empty/6767e85a-25f0-4663-be25-22b67b76496a.jpg,0,Empty,training,exact_duplicate,Final Dataset/training/Empty/0418a022-0653-4fbe-a2eb-c474c09fa94d.jpg
+Final Dataset/training/Empty/f662bce0-fb0c-444a-beae-df6219e89cf5 (1).jpg,0,Empty,training,exact_duplicate,Final Dataset/training/Empty/0418a022-0653-4fbe-a2eb-c474c09fa94d.jpg
+Final Dataset/training/Empty/f662bce0-fb0c-444a-beae-df6219e89cf5.jpg,0,Empty,training,exact_duplicate,Final Dataset/training/Empty/0418a022-0653-4fbe-a2eb-c474c09fa94d.jpg
+Final Dataset/training/High/74f0431c-6463-4da6-8e11-2a5ba3ca2d7d.jpg,3,High,training,exact_duplicate,Final Dataset/testing/High/74f0431c-6463-4da6-8e11-2a5ba3ca2d7d.jpg
+Final Dataset/training/Medium/b64daae5-dea8-4679-bb2b-25dcc02f12cd.jpg,2,Medium,training,exact_duplicate,Final Dataset/training/Medium/b64daae5-dea8-4679-bb2b-25dcc02f12cd (1).jpg
+Final Dataset/training/High/879383a2-dcb1-47af-a6bc-cdf5d8620a1e.jpg,3,High,training,exact_duplicate,Final Dataset/training/High/879383a2-dcb1-47af-a6bc-cdf5d8620a1e (1).jpg
+Final Dataset/validation/Medium/879c9912-05c4-4e5f-a851-7dad51ddd714.jpg,2,Medium,validation,exact_duplicate,Final Dataset/training/Medium/879c9912-05c4-4e5f-a851-7dad51ddd714.jpg
+Final Dataset/training/High/109495c4-140e-4103-8980-5593beb0c89d.jpg,3,High,training,exact_duplicate,Final Dataset/training/High/109495c4-140e-4103-8980-5593beb0c89d (1).jpg
+Final Dataset/training/Medium/82f53d99-0628-411b-aac0-f8d1473a2c41.jpg,2,Medium,training,exact_duplicate,Final Dataset/testing/Medium/82f53d99-0628-411b-aac0-f8d1473a2c41.jpg
+Final Dataset/validation/High/4e62f338-8ad8-4c75-abf5-28a92a614371.jpg,3,High,validation,exact_duplicate,Final Dataset/training/High/4e62f338-8ad8-4c75-abf5-28a92a614371.jpg
+Final Dataset/training/High/298edc14-688b-4028-840a-cef23b317513.jpg,3,High,training,exact_duplicate,Final Dataset/training/High/298edc14-688b-4028-840a-cef23b317513 (1).jpg
+Final Dataset/training/Low/14aecfe9-3114-449f-806f-f581c7ff37fe.jpg,1,Low,training,exact_duplicate,Final Dataset/testing/Low/14aecfe9-3114-449f-806f-f581c7ff37fe.jpg
+Final Dataset/training/Medium/6bf826f5-cff1-44c6-8dcc-01fe84952523.jpg,2,Medium,training,exact_duplicate,Final Dataset/testing/Medium/6bf826f5-cff1-44c6-8dcc-01fe84952523.jpg
+Final Dataset/training/Medium/33342c19-9703-44c1-ad8c-ff2aabf430a6(1).jpg,2,Medium,training,exact_duplicate,Final Dataset/training/Medium/33342c19-9703-44c1-ad8c-ff2aabf430a6 (1).jpg
+Final Dataset/training/Medium/33342c19-9703-44c1-ad8c-ff2aabf430a6.jpg,2,Medium,training,exact_duplicate,Final Dataset/training/Medium/33342c19-9703-44c1-ad8c-ff2aabf430a6 (1).jpg
+Final Dataset/validation/Empty/2f9de76e-65f7-431f-a90c-781475c071d3.jpg,0,Empty,validation,exact_duplicate,Final Dataset/validation/Empty/2f9de76e-65f7-431f-a90c-781475c071d3(1).jpg
+Final Dataset/validation/Low/8dce8fcd-2a69-4baf-b885-2c281c2befaf.jpg,1,Low,validation,exact_duplicate,Final Dataset/testing/Low/8dce8fcd-2a69-4baf-b885-2c281c2befaf.jpg
+Final Dataset/validation/Low/58ca2b23-3b07-4b4a-b8cd-d3f608fcdb3f.jpg,1,Low,validation,exact_duplicate,Final Dataset/training/Low/58ca2b23-3b07-4b4a-b8cd-d3f608fcdb3f.jpg
+Final Dataset/validation/Empty/005c5c56-aca7-4f3b-88d7-f0c0b99bc1a7.jpg,0,Empty,validation,exact_duplicate,Final Dataset/training/Empty/005c5c56-aca7-4f3b-88d7-f0c0b99bc1a7 (1).jpg
+Final Dataset/validation/Empty/1bd184e9-2b48-4aa7-a352-81c46b522ed5.jpg,0,Empty,validation,exact_duplicate,Final Dataset/testing/Empty/1bd184e9-2b48-4aa7-a352-81c46b522ed5.jpg
+Final Dataset/validation/High/1ba6900b-a043-47d2-a855-34fcde6390c4.jpg,3,High,validation,exact_duplicate,Final Dataset/validation/High/1ba6900b-a043-47d2-a855-34fcde6390c4(1).jpg
+Final Dataset/validation/Low/ab5a62bf-d34f-46ef-a6fa-43fab9e25893.jpg,1,Low,validation,exact_duplicate,Final Dataset/training/Low/ab5a62bf-d34f-46ef-a6fa-43fab9e25893.jpg
+Final Dataset/training/High/25ed1e81-0a94-4914-bb38-4cfe78a6b03f.jpg,3,High,training,exact_duplicate,Final Dataset/testing/High/25ed1e81-0a94-4914-bb38-4cfe78a6b03f.jpg
+Final Dataset/validation/Empty/3b3c7b48-feec-4cf4-a51b-5300bed54fbb.jpg,0,Empty,validation,exact_duplicate,Final Dataset/testing/Empty/3b3c7b48-feec-4cf4-a51b-5300bed54fbb.jpg
+Final Dataset/validation/Low/58e47ea1-278b-43f6-a1f9-31f2be0c8681.jpg,1,Low,validation,exact_duplicate,Final Dataset/training/Low/58e47ea1-278b-43f6-a1f9-31f2be0c8681.jpg
+Final Dataset/training/High/058942ea-38c7-4424-a3c8-3c4ea0c902fb.jpg,3,High,training,exact_duplicate,Final Dataset/training/High/058942ea-38c7-4424-a3c8-3c4ea0c902fb (1).jpg
+Final Dataset/training/High/fbb745aa-ad5b-4e47-885e-80ed9d95ff62.jpg,3,High,training,exact_duplicate,Final Dataset/training/High/fbb745aa-ad5b-4e47-885e-80ed9d95ff62 (1).jpg
+Final Dataset/validation/Empty/0aad5c2c-a166-416a-9d6d-3e5da232a5ae.jpg,0,Empty,validation,exact_duplicate,Final Dataset/testing/Empty/0aad5c2c-a166-416a-9d6d-3e5da232a5ae.jpg
+Final Dataset/testing/High/0285b1e6-5a2e-4703-a4c7-64f4eefc6f60.jpg,3,High,testing,conflicting_label,
+Final Dataset/training/Medium/0285b1e6-5a2e-4703-a4c7-64f4eefc6f60.jpg,2,Medium,training,conflicting_label,
+Final Dataset/validation/Empty/3e56cb1f-4b9a-4d7b-b958-e972516bdf58.jpg,0,Empty,validation,exact_duplicate,Final Dataset/training/Empty/3e56cb1f-4b9a-4d7b-b958-e972516bdf58.jpg
+Final Dataset/training/Medium/5045b0ac-c832-48a7-aaa7-dd4f990d47ef.jpg,2,Medium,training,exact_duplicate,Final Dataset/training/Medium/5045b0ac-c832-48a7-aaa7-dd4f990d47ef (1).jpg
+Final Dataset/validation/Medium/5045b0ac-c832-48a7-aaa7-dd4f990d47ef.jpg,2,Medium,validation,exact_duplicate,Final Dataset/training/Medium/5045b0ac-c832-48a7-aaa7-dd4f990d47ef (1).jpg
+Final Dataset/training/High/c425ced0-e630-4288-b7a2-b3fac71abdc0.jpg,3,High,training,exact_duplicate,Final Dataset/testing/High/c425ced0-e630-4288-b7a2-b3fac71abdc0.jpg
+Final Dataset/validation/Low/1ae759ab-7e37-4cff-83b4-53b32c16f764.jpg,1,Low,validation,exact_duplicate,Final Dataset/testing/Low/1ae759ab-7e37-4cff-83b4-53b32c16f764.jpg
+Final Dataset/training/Empty/e45d9a5f-b3a2-443b-a4c5-0e0ba1b41da8.jpg,0,Empty,training,exact_duplicate,Final Dataset/training/Empty/e45d9a5f-b3a2-443b-a4c5-0e0ba1b41da8 (1).jpg
+Final Dataset/training/Traffic Jam/6ea0e8a3-89c2-4f65-a2b8-5ed1e046d53c.jpg,4,Traffic Jam,training,exact_duplicate,Final Dataset/testing/Traffic Jam/6ea0e8a3-89c2-4f65-a2b8-5ed1e046d53c.jpg
+Final Dataset/training/High/002705cb-6af8-4b6c-823f-92b581acfe4d.jpg,3,High,training,exact_duplicate,Final Dataset/training/High/002705cb-6af8-4b6c-823f-92b581acfe4d (1).jpg
+Final Dataset/training/High/6fa93dc1-57fe-422d-bc69-6e8d1f67dadc.jpg,3,High,training,exact_duplicate,Final Dataset/training/High/6fa93dc1-57fe-422d-bc69-6e8d1f67dadc (1).jpg
+Final Dataset/training/Medium/d7c81ff3-3f60-4422-b925-66d7c200e342.jpg,2,Medium,training,exact_duplicate,Final Dataset/testing/Medium/d7c81ff3-3f60-4422-b925-66d7c200e342.jpg
+Final Dataset/validation/High/0e767c94-67e4-470e-b791-9ddbffaed7a6.jpg,3,High,validation,exact_duplicate,Final Dataset/validation/High/0e767c94-67e4-470e-b791-9ddbffaed7a6(1).jpg
+Final Dataset/validation/Low/8e649a4e-1d41-461d-94d5-a89e7fea9eef.jpg,1,Low,validation,exact_duplicate,Final Dataset/testing/Low/8e649a4e-1d41-461d-94d5-a89e7fea9eef.jpg
+Final Dataset/training/High/a3a14936-7899-43f6-bfaf-065ff23399b5.jpg,3,High,training,exact_duplicate,Final Dataset/training/High/a3a14936-7899-43f6-bfaf-065ff23399b5 (1).jpg
+Final Dataset/validation/Medium/1d5afdcb-b436-4f1b-8625-2092b9d85799.jpg,2,Medium,validation,exact_duplicate,Final Dataset/testing/Medium/1d5afdcb-b436-4f1b-8625-2092b9d85799.jpg
+Final Dataset/training/Empty/c7db5db4-ce1e-4f1f-b67b-6b20540cdffb.jpg,0,Empty,training,exact_duplicate,Final Dataset/training/Empty/c7db5db4-ce1e-4f1f-b67b-6b20540cdffb (1).jpg
+Final Dataset/training/High/b14e8a55-c41e-4a4c-8984-907579b7df2d.jpg,3,High,training,conflicting_label,
+Final Dataset/training/Traffic Jam/b14e8a55-c41e-4a4c-8984-907579b7df2d.jpg,4,Traffic Jam,training,conflicting_label,
+Final Dataset/training/Empty/c41fb773-c020-4e29-85bc-89ef3ee67d00.jpg,0,Empty,training,exact_duplicate,Final Dataset/training/Empty/c41fb773-c020-4e29-85bc-89ef3ee67d00 - Copy.jpg
+Final Dataset/validation/Medium/342325d4-cd33-4a82-8bba-ed9a8bb4165b.jpg,2,Medium,validation,exact_duplicate,Final Dataset/training/Medium/342325d4-cd33-4a82-8bba-ed9a8bb4165b.jpg
+Final Dataset/validation/Empty/41c61429-753f-425a-861e-31a7a5c4e813.jpg,0,Empty,validation,exact_duplicate,Final Dataset/training/Empty/41c61429-753f-425a-861e-31a7a5c4e813.jpg
+Final Dataset/training/Low/9f2a9917-6d01-4cf1-97c4-11cb9c91b213.jpg,1,Low,training,exact_duplicate,Final Dataset/testing/Low/9f2a9917-6d01-4cf1-97c4-11cb9c91b213.jpg
+Final Dataset/validation/Medium/1839cc7e-d896-49f3-95a9-851946a62cb2.jpg,2,Medium,validation,exact_duplicate,Final Dataset/training/Medium/1839cc7e-d896-49f3-95a9-851946a62cb2.jpg
+Final Dataset/validation/Empty/0a7b874b-20dd-4ab2-b2ed-89645e4c20bc.jpg,0,Empty,validation,exact_duplicate,Final Dataset/testing/Empty/0a7b874b-20dd-4ab2-b2ed-89645e4c20bc.jpg
+Final Dataset/training/Low/24f9eda6-dc79-4625-9c25-30dfa4ca9ff4.jpg,1,Low,training,exact_duplicate,Final Dataset/testing/Low/24f9eda6-dc79-4625-9c25-30dfa4ca9ff4.jpg
+Final Dataset/validation/Low/bb3a3eef-4d10-46f2-9cc9-c2b60abb7769.jpg,1,Low,validation,exact_duplicate,Final Dataset/training/Low/bb3a3eef-4d10-46f2-9cc9-c2b60abb7769.jpg
+Final Dataset/validation/Empty/3a06d0a8-6c78-4964-8a85-34495064fcd4.jpg,0,Empty,validation,exact_duplicate,Final Dataset/testing/Empty/3a06d0a8-6c78-4964-8a85-34495064fcd4.jpg
+Final Dataset/validation/High/dc9b1d39-10b3-4259-b1aa-c2fbf6862121.jpg,3,High,validation,exact_duplicate,Final Dataset/training/High/dc9b1d39-10b3-4259-b1aa-c2fbf6862121.jpg
+Final Dataset/training/Empty/49dde534-7016-41c1-a417-a1f53bae1511.jpg,0,Empty,training,exact_duplicate,Final Dataset/testing/Empty/2e9b79b8-eb72-4f9e-aae4-8a4a259c8a45.jpg
+Final Dataset/training/Empty/53ffe1fd-55bc-4992-b89f-fb8a668f16a4.jpg,0,Empty,training,exact_duplicate,Final Dataset/testing/Empty/2e9b79b8-eb72-4f9e-aae4-8a4a259c8a45.jpg
+Final Dataset/training/Empty/8acfc360-3236-435d-a5a2-478a8050d51b.jpg,0,Empty,training,exact_duplicate,Final Dataset/testing/Empty/2e9b79b8-eb72-4f9e-aae4-8a4a259c8a45.jpg
+Final Dataset/training/Empty/bd3de933-7061-4b71-9379-2b114c6b0d77 (1).jpg,0,Empty,training,exact_duplicate,Final Dataset/testing/Empty/2e9b79b8-eb72-4f9e-aae4-8a4a259c8a45.jpg
+Final Dataset/validation/Empty/1c37fc9a-6910-4711-89bf-4324b75a7e84.jpg,0,Empty,validation,exact_duplicate,Final Dataset/testing/Empty/1c37fc9a-6910-4711-89bf-4324b75a7e84.jpg
+Final Dataset/training/High/dcd3ed0c-b718-49a0-98a8-bc2c700ed1ff.jpg,3,High,training,conflicting_label,
+Final Dataset/training/Traffic Jam/dcd3ed0c-b718-49a0-98a8-bc2c700ed1ff.jpg,4,Traffic Jam,training,conflicting_label,
+Final Dataset/validation/Medium/1a0b5361-a2f7-4679-92b9-0f18608d3481.jpg,2,Medium,validation,exact_duplicate,Final Dataset/testing/Medium/1a0b5361-a2f7-4679-92b9-0f18608d3481.jpg
+Final Dataset/validation/Empty/39f0e895-5e8d-4aec-8890-18b30b604164.jpg,0,Empty,validation,exact_duplicate,Final Dataset/training/Empty/39f0e895-5e8d-4aec-8890-18b30b604164.jpg
+Final Dataset/training/Medium/60a6e195-9a82-4c5b-b212-40d6c7ef4aac.jpg,2,Medium,training,exact_duplicate,Final Dataset/testing/Medium/60a6e195-9a82-4c5b-b212-40d6c7ef4aac.jpg
+Final Dataset/validation/Medium/78161cee-486c-457d-9525-24295bee87b4.jpg,2,Medium,validation,exact_duplicate,Final Dataset/training/Medium/78161cee-486c-457d-9525-24295bee87b4.jpg
+Final Dataset/training/Low/9b041343-9721-4560-88af-06bcbef5f728.jpg,1,Low,training,exact_duplicate,Final Dataset/testing/Low/9b041343-9721-4560-88af-06bcbef5f728.jpg
+Final Dataset/training/High/9964ac09-8d1d-493f-97e5-d011ffa4fcd6.jpg,3,High,training,exact_duplicate,Final Dataset/testing/High/9964ac09-8d1d-493f-97e5-d011ffa4fcd6.jpg
+Final Dataset/validation/High/9964ac09-8d1d-493f-97e5-d011ffa4fcd6.jpg,3,High,validation,exact_duplicate,Final Dataset/testing/High/9964ac09-8d1d-493f-97e5-d011ffa4fcd6.jpg
+Final Dataset/training/Medium/45d90a97-ce4b-4a3c-bdc4-cf84ad4cedaa.jpg,2,Medium,training,exact_duplicate,Final Dataset/testing/Medium/45d90a97-ce4b-4a3c-bdc4-cf84ad4cedaa.jpg
+Final Dataset/training/Low/02d75e04-88ad-4103-94d7-d15bb3f38cca.jpg,1,Low,training,exact_duplicate,Final Dataset/testing/Low/02d75e04-88ad-4103-94d7-d15bb3f38cca.jpg
+Final Dataset/validation/High/e3c2b00d-2596-447c-8da1-44be2bfffbf9.jpg,3,High,validation,exact_duplicate,Final Dataset/training/High/e3c2b00d-2596-447c-8da1-44be2bfffbf9.jpg
+Final Dataset/training/Low/44084bb7-e8c8-4fb8-8338-0e618c0eb43c.jpg,1,Low,training,exact_duplicate,Final Dataset/training/Low/44084bb7-e8c8-4fb8-8338-0e618c0eb43c (1).jpg
+Final Dataset/validation/Low/aa61f384-d4a9-426a-ab83-ca1130fcaed6.jpg,1,Low,validation,exact_duplicate,Final Dataset/training/Low/aa61f384-d4a9-426a-ab83-ca1130fcaed6.jpg
+Final Dataset/training/Medium/b67cae19-1b8f-4fe2-af58-b5d466bad78e.jpg,2,Medium,training,exact_duplicate,Final Dataset/testing/Medium/b67cae19-1b8f-4fe2-af58-b5d466bad78e.jpg
+Final Dataset/validation/Low/2a6ca367-5265-47bf-a455-7bea90e56790.jpg,1,Low,validation,exact_duplicate,Final Dataset/validation/Low/2a6ca367-5265-47bf-a455-7bea90e56790(1).jpg
+Final Dataset/training/Empty/a158837f-0c0a-4ce3-ac33-4d28828bcf36(1).jpg,0,Empty,training,exact_duplicate,Final Dataset/training/Empty/a158837f-0c0a-4ce3-ac33-4d28828bcf36 (1).jpg
+Final Dataset/training/Empty/a158837f-0c0a-4ce3-ac33-4d28828bcf36.jpg,0,Empty,training,exact_duplicate,Final Dataset/training/Empty/a158837f-0c0a-4ce3-ac33-4d28828bcf36 (1).jpg
+Final Dataset/validation/High/df012625-cf16-4367-b37a-f944fbb62eee.jpg,3,High,validation,exact_duplicate,Final Dataset/training/High/df012625-cf16-4367-b37a-f944fbb62eee.jpg
+Final Dataset/training/Medium/50f0e0bc-df24-4419-9b09-d61191d11eb0.jpg,2,Medium,training,exact_duplicate,Final Dataset/testing/Medium/50f0e0bc-df24-4419-9b09-d61191d11eb0.jpg
+Final Dataset/training/Traffic Jam/4baf7c22-e9bf-45cf-8e4c-da2aca5d8a67.jpg,4,Traffic Jam,training,exact_duplicate,Final Dataset/testing/Traffic Jam/4baf7c22-e9bf-45cf-8e4c-da2aca5d8a67.jpg
+Final Dataset/validation/High/ecdb16c5-1fe5-456e-9dfb-5d4c20d1abf4.jpg,3,High,validation,exact_duplicate,Final Dataset/training/High/ecdb16c5-1fe5-456e-9dfb-5d4c20d1abf4.jpg
+Final Dataset/training/Medium/68c7e7d5-7404-42c4-b95d-7c532dca709f.jpg,2,Medium,training,exact_duplicate,Final Dataset/testing/Medium/68c7e7d5-7404-42c4-b95d-7c532dca709f.jpg
+Final Dataset/training/Empty/20cd6332-b2d3-49e4-9550-4c12d7fb2d14.jpg,0,Empty,training,exact_duplicate,Final Dataset/testing/Empty/0ce04417-34b8-491b-9e3c-8f8359c350d6.jpg
+Final Dataset/training/Empty/c0101fcc-21a8-402e-acf5-4032029d7c82 (2).jpg,0,Empty,training,exact_duplicate,Final Dataset/testing/Empty/0ce04417-34b8-491b-9e3c-8f8359c350d6.jpg
+Final Dataset/training/Empty/c0101fcc-21a8-402e-acf5-4032029d7c82.jpg,0,Empty,training,exact_duplicate,Final Dataset/testing/Empty/0ce04417-34b8-491b-9e3c-8f8359c350d6.jpg
+Final Dataset/validation/Empty/5dba4cf2-47f3-4578-9598-338682ac272b.jpg,0,Empty,validation,exact_duplicate,Final Dataset/training/Empty/5dba4cf2-47f3-4578-9598-338682ac272b.jpg
+Final Dataset/training/Traffic Jam/5c076bc3-7387-46ed-a04b-5fd4cab4c2f4.jpg,4,Traffic Jam,training,exact_duplicate,Final Dataset/testing/Traffic Jam/5c076bc3-7387-46ed-a04b-5fd4cab4c2f4.jpg
+Final Dataset/validation/Empty/44bf0759-1080-4a6d-ad0f-30e683cdf813.jpg,0,Empty,validation,exact_duplicate,Final Dataset/training/Empty/44bf0759-1080-4a6d-ad0f-30e683cdf813.jpg
+Final Dataset/validation/Medium/1e946cc1-9165-4122-a339-8d4941090236.jpg,2,Medium,validation,exact_duplicate,Final Dataset/training/Medium/1e946cc1-9165-4122-a339-8d4941090236.jpg
+Final Dataset/validation/Low/62dd2f85-a200-4eb8-880d-7942389c6084.jpg,1,Low,validation,exact_duplicate,Final Dataset/training/Low/62dd2f85-a200-4eb8-880d-7942389c6084.jpg
+Final Dataset/testing/Traffic Jam/79761bca-1c01-41b9-a7f3-3593cc051cc4.jpg,4,Traffic Jam,testing,exact_duplicate,Final Dataset/testing/Traffic Jam/79761bca-1c01-41b9-a7f3-3593cc051cc4(1).jpg
+Final Dataset/training/High/5050c989-d986-4cac-a28b-a78e97220ee5.jpg,3,High,training,exact_duplicate,Final Dataset/testing/High/5050c989-d986-4cac-a28b-a78e97220ee5.jpg
+Final Dataset/validation/High/5050c989-d986-4cac-a28b-a78e97220ee5.jpg,3,High,validation,exact_duplicate,Final Dataset/testing/High/5050c989-d986-4cac-a28b-a78e97220ee5.jpg
+Final Dataset/training/Medium/41b96045-c675-4525-8acf-f227c65b1039.jpg,2,Medium,training,exact_duplicate,Final Dataset/training/Medium/41b96045-c675-4525-8acf-f227c65b1039 (1).jpg
+Final Dataset/validation/Low/ad10b96f-a915-4f57-84d8-70199326b1e4.jpg,1,Low,validation,exact_duplicate,Final Dataset/training/Low/ad10b96f-a915-4f57-84d8-70199326b1e4.jpg
+Final Dataset/validation/Medium/7474b100-cc5d-47fe-9c17-22df4d2bea48.jpg,2,Medium,validation,exact_duplicate,Final Dataset/training/Medium/7474b100-cc5d-47fe-9c17-22df4d2bea48.jpg
+Final Dataset/validation/Low/b1981f71-d58d-4574-a51f-994d0ad962c2.jpg,1,Low,validation,exact_duplicate,Final Dataset/training/Low/b1981f71-d58d-4574-a51f-994d0ad962c2.jpg
+Final Dataset/training/Low/7ed22748-c098-4d52-bebf-1517b92afa5b.jpg,1,Low,training,exact_duplicate,Final Dataset/testing/Low/7ed22748-c098-4d52-bebf-1517b92afa5b.jpg
+Final Dataset/testing/Traffic Jam/4a471c2d-cf88-4618-9449-d069a30b62fc.jpg,4,Traffic Jam,testing,exact_duplicate,Final Dataset/testing/Traffic Jam/4a471c2d-cf88-4618-9449-d069a30b62fc (2).jpg
+Final Dataset/training/Traffic Jam/4a471c2d-cf88-4618-9449-d069a30b62fc (2).jpg,4,Traffic Jam,training,exact_duplicate,Final Dataset/testing/Traffic Jam/4a471c2d-cf88-4618-9449-d069a30b62fc (2).jpg
+Final Dataset/training/Low/7f288ca3-3ca1-44ee-85f0-6b9191bba412.jpg,1,Low,training,exact_duplicate,Final Dataset/testing/Low/7f288ca3-3ca1-44ee-85f0-6b9191bba412.jpg
+Final Dataset/validation/Medium/4ee4826d-d12a-4665-a644-807ed1e8f955.jpg,2,Medium,validation,exact_duplicate,Final Dataset/testing/Medium/4ee4826d-d12a-4665-a644-807ed1e8f955.jpg
+Final Dataset/training/Low/7b2f7063-91f3-43b4-b2ea-96d8bef88468.jpg,1,Low,training,exact_duplicate,Final Dataset/testing/Low/7b2f7063-91f3-43b4-b2ea-96d8bef88468.jpg
+Final Dataset/training/Low/ef969416-9652-4867-a0f1-8c75b09e887f.jpg,1,Low,training,conflicting_label,
+Final Dataset/training/Medium/ef969416-9652-4867-a0f1-8c75b09e887f.jpg,2,Medium,training,conflicting_label,
+Final Dataset/validation/Low/064caee1-56e9-4583-bf2e-ef5dbc811a11.jpg,1,Low,validation,exact_duplicate,Final Dataset/training/Low/064caee1-56e9-4583-bf2e-ef5dbc811a11.jpg
+Final Dataset/training/Traffic Jam/6d20025c-1548-4e59-a4c0-160454cc0467.jpg,4,Traffic Jam,training,exact_duplicate,Final Dataset/testing/Traffic Jam/6d20025c-1548-4e59-a4c0-160454cc0467.jpg
+Final Dataset/validation/Medium/2252cc59-3ad3-4088-9d05-c2a32eba5245.jpg,2,Medium,validation,exact_duplicate,Final Dataset/training/Medium/2252cc59-3ad3-4088-9d05-c2a32eba5245.jpg
+Final Dataset/validation/Empty/0ce1d078-fcbf-41cb-8124-753740253d58.jpg,0,Empty,validation,exact_duplicate,Final Dataset/testing/Empty/0ce1d078-fcbf-41cb-8124-753740253d58.jpg
