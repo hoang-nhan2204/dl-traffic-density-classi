@@ -1,7 +1,10 @@
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
+import tensorflow as tf
+from PIL import Image
+from tensorflow.keras import layers
 
 
 SEED = 42
@@ -18,7 +21,99 @@ PROJECT_DIR = Path(__file__).resolve().parents[1]
 MANIFEST_DIR = PROJECT_DIR / "data" / "manifests"
 
 
-def create_generators(
+augmentation_layers = tf.keras.Sequential(
+    [
+        layers.RandomFlip("horizontal", seed=SEED),
+        layers.RandomRotation(5 / 360, fill_mode="nearest", seed=SEED),
+        layers.RandomTranslation(0.08, 0.08, fill_mode="nearest", seed=SEED),
+        layers.RandomZoom(0.15, 0.15, fill_mode="nearest", seed=SEED),
+        layers.RandomContrast(0.2, seed=SEED),
+    ]
+)
+
+
+def read_image(image_path):
+    image_path = image_path.decode("utf-8")
+
+    with Image.open(image_path) as image:
+        image = image.convert("RGB")
+        return np.array(image)
+
+
+def load_image(image_path, label, image_size):
+    image = tf.numpy_function(
+        read_image,
+        [image_path],
+        tf.uint8,
+    )
+    image.set_shape([None, None, 3])
+
+    image = tf.image.resize_with_pad(
+        image,
+        image_size[0],
+        image_size[1],
+    )
+
+    image = tf.cast(image, tf.float32) / 255.0
+    label = tf.one_hot(label, depth=len(CLASS_NAMES))
+
+    return image, label
+
+
+def augment_image(image, label):
+    image = augmentation_layers(image, training=True)
+    image = tf.image.random_brightness(
+        image,
+        max_delta=0.2,
+        seed=SEED,
+    )
+    image = tf.clip_by_value(image, 0.0, 1.0)
+
+    return image, label
+
+
+def make_dataset(
+    dataframe,
+    image_size,
+    batch_size,
+    training=False,
+    augmentation=False,
+):
+    image_paths = [
+        str(PROJECT_DIR / image_path)
+        for image_path in dataframe["image_path"]
+    ]
+
+    labels = dataframe["label"].to_numpy()
+
+    dataset = tf.data.Dataset.from_tensor_slices(
+        (image_paths, labels)
+    )
+
+    if training:
+        dataset = dataset.shuffle(
+            buffer_size=len(dataframe),
+            seed=SEED,
+        )
+
+    dataset = dataset.map(
+        lambda path, label: load_image(path, label, image_size),
+        num_parallel_calls=tf.data.AUTOTUNE,
+    )
+
+    if training and augmentation:
+        dataset = dataset.map(
+            augment_image,
+            num_parallel_calls=tf.data.AUTOTUNE,
+        )
+
+    dataset = dataset.batch(batch_size)
+    dataset = dataset.prefetch(tf.data.AUTOTUNE)
+
+    return dataset
+
+
+def create_datasets(
     augmentation=True,
     image_size=(224, 224),
     batch_size=32,
@@ -27,65 +122,24 @@ def create_generators(
     val_df = pd.read_csv(MANIFEST_DIR / "val.csv")
     test_df = pd.read_csv(MANIFEST_DIR / "test.csv")
 
-    if augmentation:
-        train_datagen = ImageDataGenerator(
-            rescale=1 / 255,
-            rotation_range=5,
-            width_shift_range=0.08,
-            height_shift_range=0.08,
-            shear_range=5,
-            zoom_range=(0.85, 1.15),
-            brightness_range=(0.6, 1.4),
-            horizontal_flip=True,
-            fill_mode="nearest",
-        )
-    else:
-        train_datagen = ImageDataGenerator(
-            rescale=1 / 255,
-        )
-
-    plain_datagen = ImageDataGenerator(
-        rescale=1 / 255,
+    train_dataset = make_dataset(
+        train_df,
+        image_size,
+        batch_size,
+        training=True,
+        augmentation=augmentation,
     )
 
-    train_generator = train_datagen.flow_from_dataframe(
-        dataframe=train_df,
-        directory=str(PROJECT_DIR),
-        x_col="image_path",
-        y_col="class_name",
-        classes=CLASS_NAMES,
-        target_size=image_size,
-        color_mode="rgb",
-        class_mode="categorical",
-        batch_size=batch_size,
-        shuffle=True,
-        seed=SEED,
+    val_dataset = make_dataset(
+        val_df,
+        image_size,
+        batch_size,
     )
 
-    val_generator = plain_datagen.flow_from_dataframe(
-        dataframe=val_df,
-        directory=str(PROJECT_DIR),
-        x_col="image_path",
-        y_col="class_name",
-        classes=CLASS_NAMES,
-        target_size=image_size,
-        color_mode="rgb",
-        class_mode="categorical",
-        batch_size=batch_size,
-        shuffle=False,
+    test_dataset = make_dataset(
+        test_df,
+        image_size,
+        batch_size,
     )
 
-    test_generator = plain_datagen.flow_from_dataframe(
-        dataframe=test_df,
-        directory=str(PROJECT_DIR),
-        x_col="image_path",
-        y_col="class_name",
-        classes=CLASS_NAMES,
-        target_size=image_size,
-        color_mode="rgb",
-        class_mode="categorical",
-        batch_size=batch_size,
-        shuffle=False,
-    )
-
-    return train_generator, val_generator, test_generator
+    return train_dataset, val_dataset, test_dataset

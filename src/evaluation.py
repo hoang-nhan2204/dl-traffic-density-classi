@@ -10,14 +10,12 @@ from sklearn.metrics import (
 
 def evaluate_model(
     model,
-    test_generator,
+    test_dataset,
     model_name,
     average="macro",
 ):
-    test_generator.reset()
-
     probabilities = model.predict(
-        test_generator,
+        test_dataset,
         verbose=0,
     )
 
@@ -26,40 +24,46 @@ def evaluate_model(
         axis=1,
     )
 
-    true_labels = test_generator.classes
-
-    accuracy = accuracy_score(
-        true_labels,
-        predicted_labels,
-    )
-
-    precision = precision_score(
-        true_labels,
-        predicted_labels,
-        average=average,
-        zero_division=0,
-    )
-
-    recall = recall_score(
-        true_labels,
-        predicted_labels,
-        average=average,
-        zero_division=0,
-    )
-
-    f1 = f1_score(
-        true_labels,
-        predicted_labels,
-        average=average,
-        zero_division=0,
+    true_labels = np.concatenate(
+        [
+            np.argmax(labels.numpy(), axis=1)
+            for _, labels in test_dataset
+        ]
     )
 
     result = {
         "Model": model_name,
-        "Accuracy": round(accuracy, 4),
-        "Precision": round(precision, 4),
-        "Recall": round(recall, 4),
-        "F1-score": round(f1, 4),
+        "Accuracy": round(
+            accuracy_score(true_labels, predicted_labels),
+            4,
+        ),
+        "Precision": round(
+            precision_score(
+                true_labels,
+                predicted_labels,
+                average=average,
+                zero_division=0,
+            ),
+            4,
+        ),
+        "Recall": round(
+            recall_score(
+                true_labels,
+                predicted_labels,
+                average=average,
+                zero_division=0,
+            ),
+            4,
+        ),
+        "F1-score": round(
+            f1_score(
+                true_labels,
+                predicted_labels,
+                average=average,
+                zero_division=0,
+            ),
+            4,
+        ),
     }
 
     return pd.DataFrame([result])

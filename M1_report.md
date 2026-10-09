@@ -155,12 +155,12 @@ File:
 src/data_loader.py
 ```
 
-`create_generators()` reads the three existing manifests. It does not split the data again.
+`create_datasets()` reads the three existing manifests. It does not split the data again.
 
 It returns:
 
 ```python
-train_generator, val_generator, test_generator
+train_dataset, val_dataset, test_dataset
 ```
 
 The class order is fixed as:
@@ -175,21 +175,21 @@ The class order is fixed as:
 ]
 ```
 
-All images are resized to `224 × 224`, converted to RGB and rescaled from `[0, 255]` to `[0, 1]`.
+Images are decoded by Pillow according to their real contents rather than their filename extensions, then converted to RGB and processed with `tf.image.resize_with_pad()`. The longer side is resized to fit within 224 pixels, while the shorter side is padded to produce a `224 × 224` image without stretching its aspect ratio. Pixel values are then rescaled from `[0, 255]` to `[0, 1]`.
 
-The training generator can optionally apply:
+The training dataset can optionally apply:
 
 - Rotation up to ±5 degrees.
 - Width and height shift up to 8%.
-- Shear up to ±5 degrees.
-- Zoom between 0.85 and 1.15.
-- Brightness scaling between 0.6 and 1.4.
+- Zoom up to 15%.
+- Random contrast adjustment.
+- Random brightness adjustment.
 - Horizontal flip.
 - Nearest-pixel filling for empty regions.
 
-Validation and test data are not augmented. Their generator only loads, resizes, rescales and batches the images.
+Validation and test data are not augmented. Their datasets only load, resize with padding, rescale and batch the images.
 
-The training generator uses `shuffle=True`. Validation and test generators use `shuffle=False` so predictions remain aligned with the true labels.
+The training dataset is shuffled using seed 42. Validation and test datasets keep their manifest order so predictions remain aligned with the true labels.
 
 ### 3.6 Shared evaluation function
 
@@ -199,7 +199,7 @@ File:
 src/evaluation.py
 ```
 
-`evaluate_model()` resets the test generator, runs `model.predict()` and returns one table row containing:
+`evaluate_model()` runs `model.predict()` on the test dataset, reads the one-hot labels from the same dataset and returns one table row containing:
 
 | Model | Accuracy | Precision | Recall | F1-score |
 |---|---:|---:|---:|---:|
@@ -219,7 +219,7 @@ The notebook follows the presentation style of the instructor's CIFAR-10 example
 
 1. Import libraries.
 2. Set the random seed and experiment settings.
-3. Load the clean data generators.
+3. Load the clean TensorFlow datasets.
 4. Display a batch of traffic images.
 5. Present the model architecture.
 6. Build the model with Keras `Sequential`.
@@ -336,14 +336,14 @@ if str(project_dir) not in sys.path:
 The next cell loads the shared pipeline:
 
 ```python
-from src.data_loader import CLASS_NAMES, create_generators
+from src.data_loader import CLASS_NAMES, create_datasets
 from src.evaluation import evaluate_model
 ```
 
-Create the generators:
+Create the datasets:
 
 ```python
-train_generator, val_generator, test_generator = create_generators(
+train_dataset, val_dataset, test_dataset = create_datasets(
     augmentation=True,
     image_size=(224, 224),
     batch_size=32,
@@ -353,10 +353,10 @@ train_generator, val_generator, test_generator = create_generators(
 Check that the data and class mapping are correct:
 
 ```python
-print(train_generator.class_indices)
-print("Train:", train_generator.samples)
-print("Validation:", val_generator.samples)
-print("Test:", test_generator.samples)
+print("Classes:", CLASS_NAMES)
+print("Train batches:", train_dataset.cardinality().numpy())
+print("Validation batches:", val_dataset.cardinality().numpy())
+print("Test batches:", test_dataset.cardinality().numpy())
 ```
 
 Expected class mapping:
@@ -371,7 +371,7 @@ Expected class mapping:
 }
 ```
 
-The generator labels are one-hot encoded because `class_mode="categorical"`. Every model must therefore use a five-unit Softmax output and categorical cross-entropy:
+The dataset labels are converted to one-hot vectors by `tf.one_hot()`. Every model must therefore use a five-unit Softmax output and categorical cross-entropy:
 
 ```python
 layers.Dense(5, activation="softmax")
@@ -389,8 +389,8 @@ Train with:
 
 ```python
 history = model.fit(
-    train_generator,
-    validation_data=val_generator,
+    train_dataset,
+    validation_data=val_dataset,
     epochs=10,
 )
 ```
@@ -400,7 +400,7 @@ Evaluate only after the model configuration has been selected using validation r
 ```python
 result = evaluate_model(
     model=model,
-    test_generator=test_generator,
+    test_dataset=test_dataset,
     model_name="Model name",
 )
 
@@ -412,7 +412,7 @@ Important rules:
 - Do not run `train_test_split()` again in a model notebook.
 - Do not change the class order.
 - Do not augment validation or test images.
-- Keep `shuffle=False` for validation and test.
+- Keep validation and test datasets deterministic and unshuffled.
 - Use validation results for model selection.
 - Use test results only for final comparison.
 
@@ -445,18 +445,114 @@ src/evaluation.py
 
 This ensures the Simple CNN and Deep Custom CNN use exactly the same data.
 
+### Important loader API changes for M2
+
+The loading pipeline was changed after the first implementation because `ImageDataGenerator` resized every image directly to `224 × 224`, which could distort images with 4:3 or 16:9 aspect ratios.
+
+The current pipeline uses `tf.data.Dataset` and `tf.image.resize_with_pad()` instead. M2 must use the current names below and must not copy the old generator code from earlier notes or chat messages.
+
+| Old name or API | Current name or API | Reason |
+|---|---|---|
+| `ImageDataGenerator` | `tf.data.Dataset` | Allows aspect-ratio-preserving resize and padding |
+| `create_generators()` | `create_datasets()` | The function now returns TensorFlow datasets |
+| `train_generator` | `train_dataset` | Updated object type and naming |
+| `val_generator` | `val_dataset` | Updated object type and naming |
+| `test_generator` | `test_dataset` | Updated object type and naming |
+| `flow_from_dataframe()` | `tf.data.Dataset.from_tensor_slices()` | Paths and labels are read directly from manifests |
+| `target_size=(224, 224)` | `tf.image.resize_with_pad(image, 224, 224)` | Prevents stretching the image |
+| `test_generator.classes` | Labels read from `test_dataset` | `tf.data.Dataset` has no `.classes` attribute |
+| `test_generator.reset()` | No replacement needed | The test dataset is deterministic and can be iterated again |
+
+The filenames remain:
+
+```text
+src/data_loader.py
+src/evaluation.py
+```
+
+The clean-split files also remain unchanged:
+
+```text
+data/manifests/train.csv
+data/manifests/val.csv
+data/manifests/test.csv
+data/manifests/excluded_images.csv
+```
+
+M2 should use the following import:
+
+```python
+from src.data_loader import CLASS_NAMES, create_datasets
+from src.evaluation import evaluate_model
+```
+
+The correct loading call is:
+
+```python
+train_dataset, val_dataset, test_dataset = create_datasets(
+    augmentation=True,
+    image_size=(224, 224),
+    batch_size=32,
+)
+```
+
+The correct training call is:
+
+```python
+history = model.fit(
+    train_dataset,
+    validation_data=val_dataset,
+    epochs=10,
+)
+```
+
+The correct evaluation call is:
+
+```python
+result = evaluate_model(
+    model=model,
+    test_dataset=test_dataset,
+    model_name="Deep Custom CNN",
+)
+```
+
+Do not use any of the following names in `02_complex_cnn.ipynb`:
+
+```python
+create_generators
+train_generator
+val_generator
+test_generator
+```
+
+The current preprocessing order is:
+
+```text
+Manifest path
+→ Pillow decode
+→ RGB conversion
+→ resize while preserving aspect ratio
+→ zero padding to 224×224
+→ rescale to [0, 1]
+→ augmentation for training only
+→ batch
+→ prefetch
+```
+
+Pillow is retained because the dataset contains a small number of WebP images whose filenames use the `.jpg` extension. Decoding by content prevents these files from failing in the TensorFlow pipeline.
+
 ### Suggested M2 notebook flow
 
 1. Select the global TensorFlow environment.
 2. Add the project root to `sys.path`.
-3. Load generators using `create_generators()`.
+3. Load datasets using `create_datasets()`.
 4. Display the data counts and class mapping.
 5. Define reusable CNN blocks inside the notebook.
 6. Build the Deep Custom CNN.
 7. Print `model.summary()` and describe each block.
-8. Compile and train using the validation generator.
+8. Compile and train using the validation dataset.
 9. Plot loss and accuracy.
-10. Evaluate once on the test generator.
+10. Evaluate once on the test dataset.
 11. Add the result to the shared model comparison table.
 
 A suitable custom block can conceptually contain:
