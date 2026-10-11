@@ -1,4 +1,8 @@
 from pathlib import Path
+import io
+import os
+import threading
+import zipfile
 
 import numpy as np
 import pandas as pd
@@ -19,6 +23,9 @@ CLASS_NAMES = [
 
 PROJECT_DIR = Path(__file__).resolve().parents[1]
 MANIFEST_DIR = PROJECT_DIR / "data" / "manifests"
+ARCHIVE_PATH = PROJECT_DIR / "traffic.zip"
+_archive = None
+_archive_lock = threading.Lock()
 
 
 augmentation_layers = tf.keras.Sequential(
@@ -33,9 +40,25 @@ augmentation_layers = tf.keras.Sequential(
 
 
 def read_image(image_path):
-    image_path = image_path.decode("utf-8")
+    if isinstance(image_path, bytes):
+        image_path = image_path.decode("utf-8")
+    else:
+        image_path = str(image_path)
 
-    with Image.open(image_path) as image:
+    source_path = Path(image_path)
+    if source_path.exists():
+        image_source = source_path
+    else:
+        # The project can be used without extracting Final Dataset/ locally.
+        # A lock keeps shared ZipFile reads safe under tf.data parallel mapping.
+        relative_path = source_path.relative_to(PROJECT_DIR).as_posix()
+        global _archive
+        with _archive_lock:
+            if _archive is None:
+                _archive = zipfile.ZipFile(ARCHIVE_PATH)
+            image_source = io.BytesIO(_archive.read(relative_path))
+
+    with Image.open(image_source) as image:
         image = image.convert("RGB")
         return np.array(image)
 
@@ -78,6 +101,7 @@ def make_dataset(
     batch_size,
     training=False,
     augmentation=False,
+    cache=True,
 ):
     image_paths = [
         str(PROJECT_DIR / image_path)
@@ -90,16 +114,22 @@ def make_dataset(
         (image_paths, labels)
     )
 
-    if training:
-        dataset = dataset.shuffle(
-            buffer_size=len(dataframe),
-            seed=SEED,
-        )
-
     dataset = dataset.map(
         lambda path, label: load_image(path, label, image_size),
         num_parallel_calls=tf.data.AUTOTUNE,
     )
+
+    # Cache decoded/resized immutable images in RAM. Augmentation deliberately
+    # remains after cache so every epoch still receives new random transforms.
+    if cache:
+        dataset = dataset.cache()
+
+    if training:
+        dataset = dataset.shuffle(
+            buffer_size=len(dataframe),
+            seed=SEED,
+            reshuffle_each_iteration=True,
+        )
 
     if training and augmentation:
         dataset = dataset.map(
@@ -107,6 +137,10 @@ def make_dataset(
             num_parallel_calls=tf.data.AUTOTUNE,
         )
 
+    options = tf.data.Options()
+    options.threading.private_threadpool_size = min(16, os.cpu_count() or 1)
+    options.threading.max_intra_op_parallelism = 1
+    dataset = dataset.with_options(options)
     dataset = dataset.batch(batch_size)
     dataset = dataset.prefetch(tf.data.AUTOTUNE)
 
