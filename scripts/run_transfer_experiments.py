@@ -1,5 +1,5 @@
 """Resumable TensorFlow transfer-learning runner; all selection uses validation Macro-F1."""
-import csv, gc, json, os, sys, time, traceback
+import csv, gc, json, sys, time, traceback
 from pathlib import Path
 
 import numpy as np
@@ -9,12 +9,19 @@ from sklearn.metrics import (accuracy_score, balanced_accuracy_score,
                              precision_recall_fscore_support)
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from src.transfer_data import create_transfer_sequences
+from src.evaluation import evaluate_model
+from src.transfer_data import (
+    SHARED_AUGMENTATION_NAME,
+    SharedCnnAugmentation,
+    as_tensor_dataset,
+    create_transfer_sequences,
+)
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "outputs" / "transfer_learning"
+OUT = ROOT / "outputs" / "transfer_learning_shared_aug_v2"
 REGISTRY = OUT / "experiment_registry.csv"
 CLASSES = ["Empty", "Low", "Medium", "High", "Traffic Jam"]
+AUGMENTATION_OPTIONS = ("A0", "A1")
 
 
 def set_seed(seed):
@@ -22,16 +29,14 @@ def set_seed(seed):
 
 
 def make_augment(name):
-    if name == "A0": return None
-    strength = 0.03 if name == "A1" else 0.05
-    contrast = 0.10 if name == "A1" else 0.20
-    return tf.keras.Sequential([
-        tf.keras.layers.RandomFlip("horizontal"),
-        tf.keras.layers.RandomRotation(strength),
-        tf.keras.layers.RandomTranslation(strength, strength),
-        tf.keras.layers.RandomZoom((-0.05, 0.05) if name == "A1" else (-0.10, 0.10)),
-        tf.keras.layers.RandomContrast(contrast),
-    ], name=f"{name}_train_augmentation")
+    if name == "A0":
+        return None
+    if name != "A1":
+        raise ValueError(
+            f"Unknown augmentation setting: {name}. "
+            f"Allowed settings: {AUGMENTATION_OPTIONS}."
+        )
+    return SharedCnnAugmentation(name=f"{name}_{SHARED_AUGMENTATION_NAME}")
 
 
 def backbone(name, input_tensor):
@@ -79,7 +84,7 @@ def run(spec):
     done=path/"completed.json"
     if done.exists():
         return spec | json.load(open(done))
-    start=time.time(); row={"experiment_id":run_id,**spec,"status":"running","best_epoch":"","best_val_macro_f1":"","checkpoint_path":"","error_summary":""}; write_registry(row)
+    start=time.time(); row={"experiment_id":run_id,**spec,"augmentation_protocol":SHARED_AUGMENTATION_NAME if spec["augmentation"]=="A1" else "none","status":"running","best_epoch":"","best_val_macro_f1":"","checkpoint_path":"","error_summary":""}; write_registry(row)
     try:
         set_seed(spec["seed"]); train,val,_=create_transfer_sequences(batch_size=32,seed=spec["seed"])
         model,base=build_model(spec["backbone"],spec["augmentation"])
@@ -121,6 +126,11 @@ def evaluate_test(spec):
         return json.load(open(output))
     _, _, test = create_transfer_sequences(batch_size=32, seed=spec["seed"])
     model = tf.keras.models.load_model(path / "best.keras", compile=False)
+    shared_result = evaluate_model(
+        model=model,
+        test_dataset=as_tensor_dataset(test),
+        model_name=run_name,
+    ).iloc[0]
     y_true = np.concatenate([y.argmax(1) for _, y in test])
     y_pred = model.predict(test, verbose=0).argmax(1)
     precision, recall, f1, support = precision_recall_fscore_support(
@@ -143,6 +153,17 @@ def evaluate_test(spec):
         },
         "confusion_matrix": confusion_matrix(y_true, y_pred, labels=range(5)).tolist(),
     }
+    for key, shared_column in {
+        "accuracy": "Accuracy",
+        "macro_precision": "Precision",
+        "macro_recall": "Recall",
+        "macro_f1": "F1-score",
+    }.items():
+        if not np.isclose(values[key], float(shared_result[shared_column]), atol=5e-4):
+            raise RuntimeError(
+                f"Shared evaluation disagrees with transfer metrics for {key}: "
+                f"{values[key]} vs {shared_result[shared_column]}"
+            )
     json.dump(values, open(output, "w"), indent=2)
     np.savetxt(path / "test_confusion_matrix.csv", values["confusion_matrix"], delimiter=",", fmt="%d")
     tf.keras.backend.clear_session(); gc.collect()
@@ -172,7 +193,7 @@ if __name__=="__main__":
     # choices are frozen.
     augmentation_results = [
         run({"backbone": reference, "augmentation": augmentation, "strategy": "F1", "loss": "weighted", "seed": 42})
-        for augmentation in ["A0", "A1", "A2"]
+        for augmentation in AUGMENTATION_OPTIONS
     ]
     selected_augmentation = select_best(augmentation_results, "augmentation")
 

@@ -13,6 +13,7 @@ import tensorflow as tf
 CLASS_NAMES = ["Empty", "Low", "Medium", "High", "Traffic Jam"]
 PROJECT_DIR = Path(__file__).resolve().parents[1]
 MANIFEST_DIR = PROJECT_DIR / "data" / "transfer_final_manifests"
+SHARED_AUGMENTATION_NAME = "shared_cnn_v1"
 
 
 def letterbox(image, size=224):
@@ -21,6 +22,71 @@ def letterbox(image, size=224):
     canvas = Image.new("RGB", (size, size), (124, 116, 103))
     canvas.paste(image, ((size - image.width) // 2, (size - image.height) // 2))
     return np.asarray(canvas, dtype=np.float32)
+
+
+@tf.keras.utils.register_keras_serializable(package="traffic_density")
+class SharedCnnAugmentation(tf.keras.layers.Layer):
+    """Apply the exact train-time augmentation policy used by the CNN notebooks.
+
+    ``ManifestSequence`` returns raw RGB values in [0, 255] because the
+    pretrained Keras applications expect that scale.  The shared CNN pipeline
+    applies its transforms to [0, 1] images, so this layer temporarily rescales
+    only while augmenting and restores [0, 255] before a backbone-specific
+    ImageNet preprocessor is called.
+    """
+
+    def __init__(self, seed=42, **kwargs):
+        super().__init__(**kwargs)
+        self.seed = seed
+        self.transforms = tf.keras.Sequential(
+            [
+                tf.keras.layers.RandomFlip("horizontal", seed=seed),
+                tf.keras.layers.RandomRotation(
+                    5 / 360,
+                    fill_mode="nearest",
+                    seed=seed,
+                ),
+                tf.keras.layers.RandomTranslation(
+                    0.08,
+                    0.08,
+                    fill_mode="nearest",
+                    seed=seed,
+                ),
+                tf.keras.layers.RandomZoom(
+                    0.15,
+                    0.15,
+                    fill_mode="nearest",
+                    seed=seed,
+                ),
+                tf.keras.layers.RandomContrast(0.2, seed=seed),
+            ],
+            name="shared_cnn_geometric_and_contrast",
+        )
+
+    def _augment(self, images):
+        images = tf.cast(images, tf.float32) / 255.0
+        images = self.transforms(images, training=True)
+        images = tf.image.random_brightness(
+            images,
+            max_delta=0.2,
+            seed=self.seed,
+        )
+        images = tf.clip_by_value(images, 0.0, 1.0)
+        return images * 255.0
+
+    def build(self, input_shape):
+        self.transforms.build(input_shape)
+        super().build(input_shape)
+
+    def call(self, images, training=None):
+        if training is True:
+            return self._augment(images)
+        if training is False or training is None:
+            return images
+        return tf.cond(training, lambda: self._augment(images), lambda: images)
+
+    def get_config(self):
+        return {**super().get_config(), "seed": self.seed}
 
 
 class ManifestSequence(tf.keras.utils.Sequence):
@@ -61,3 +127,24 @@ def create_transfer_sequences(batch_size=32, seed=42):
         ManifestSequence("val", batch_size, shuffle=False, seed=seed),
         ManifestSequence("test", batch_size, shuffle=False, seed=seed),
     )
+
+
+def as_tensor_dataset(sequence):
+    """Expose an existing deterministic sequence as tf.data for shared evaluation.
+
+    The shared ``evaluate_model`` helper expects Tensor labels and can therefore
+    be used without altering the Simple/Complex CNN evaluation module.
+    """
+
+    images, labels = sequence[0]
+    signature = (
+        tf.TensorSpec(shape=(None, *images.shape[1:]), dtype=tf.float32),
+        tf.TensorSpec(shape=(None, labels.shape[1]), dtype=tf.float32),
+    )
+
+    def batches():
+        for index in range(len(sequence)):
+            batch_images, batch_labels = sequence[index]
+            yield batch_images.astype(np.float32), batch_labels.astype(np.float32)
+
+    return tf.data.Dataset.from_generator(batches, output_signature=signature)
