@@ -21,7 +21,14 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "outputs" / "transfer_learning_shared_aug_v2"
 REGISTRY = OUT / "experiment_registry.csv"
 CLASSES = ["Empty", "Low", "Medium", "High", "Traffic Jam"]
-AUGMENTATION_OPTIONS = ("A0", "A1")
+AUGMENTATION_OPTIONS = ("A0", "A1", "A2")
+AUGMENTATION_PROTOCOLS = {
+    "A0": "none",
+    "A1": SHARED_AUGMENTATION_NAME,
+    # This intentionally retains the stronger, transfer-specific A2 ablation
+    # used before the shared-CNN A1 protocol was introduced.
+    "A2": "transfer_strong_v1",
+}
 
 
 def set_seed(seed):
@@ -31,12 +38,25 @@ def set_seed(seed):
 def make_augment(name):
     if name == "A0":
         return None
-    if name != "A1":
+    if name == "A1":
+        return SharedCnnAugmentation(name=f"{name}_{SHARED_AUGMENTATION_NAME}")
+    if name == "A2":
+        return tf.keras.Sequential(
+            [
+                tf.keras.layers.RandomFlip("horizontal", seed=42),
+                tf.keras.layers.RandomRotation(0.05, seed=42),
+                tf.keras.layers.RandomTranslation(0.05, 0.05, seed=42),
+                tf.keras.layers.RandomZoom((-0.10, 0.10), seed=42),
+                tf.keras.layers.RandomContrast(0.20, seed=42),
+            ],
+            name="A2_transfer_strong_v1",
+        )
+    if name not in AUGMENTATION_OPTIONS:
         raise ValueError(
             f"Unknown augmentation setting: {name}. "
             f"Allowed settings: {AUGMENTATION_OPTIONS}."
         )
-    return SharedCnnAugmentation(name=f"{name}_{SHARED_AUGMENTATION_NAME}")
+    raise AssertionError(f"Unhandled augmentation setting: {name}")
 
 
 def backbone(name, input_tensor):
@@ -84,7 +104,7 @@ def run(spec):
     done=path/"completed.json"
     if done.exists():
         return spec | json.load(open(done))
-    start=time.time(); row={"experiment_id":run_id,**spec,"augmentation_protocol":SHARED_AUGMENTATION_NAME if spec["augmentation"]=="A1" else "none","status":"running","best_epoch":"","best_val_macro_f1":"","checkpoint_path":"","error_summary":""}; write_registry(row)
+    start=time.time(); row={"experiment_id":run_id,**spec,"augmentation_protocol":AUGMENTATION_PROTOCOLS[spec["augmentation"]],"status":"running","best_epoch":"","best_val_macro_f1":"","checkpoint_path":"","error_summary":""}; write_registry(row)
     try:
         set_seed(spec["seed"]); train,val,_=create_transfer_sequences(batch_size=32,seed=spec["seed"])
         model,base=build_model(spec["backbone"],spec["augmentation"])

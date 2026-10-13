@@ -7,3 +7,11 @@ traffic.zip
 dataset_contact_sheet*.jpg
 *.pt
 /home/honganh/Documents/tempt/dl-traffic-density-classi/traffic.zip
+
+# Internal audits and working reports: keep local, do not publish.
+/CODEBASE_AUDIT_AFTER_PULL.md
+/DATASET_AUDIT.md
+/EXPERIMENT_REPORT.md
+/M1_report.md
+/NEAR_DUPLICATE_VERIFICATION.md
+/report/
